@@ -53,15 +53,14 @@
 
       <div class="container">
 
-        <a class="" href="#">
+        <a class="logo" href="#">
           <svg aria-hidden="true" class="">
             <use xlink:href="#logo"></use>
           </svg>
+          <svg aria-hidden="true" class="">
+            <use xlink:href="#name"></use>
+          </svg>
         </a>
-
-        <svg aria-hidden="true" class="">
-          <use xlink:href="#name"></use>
-        </svg>
 
         <nav class="nav">
           <button class="nav__button" type="button">
@@ -71,7 +70,7 @@
           <div class="nav__wrapper">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link current" href="index.html">главная</a>
+                <a class="nav__link current" href="#">главная</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="catalog.html">каталог продукции</a>
@@ -83,39 +82,39 @@
           </div>
         </nav>
 
-        <section class="lead">
-          <h2 class="lead__title">Функциональное питание&nbsp;для&nbsp;котов</h2>
-          <p class="lead__text">Занялся собой? Займись котом!</p>
-
-          <img class="lead__img" src="img/index-can-mobile.png" width="280" height="270" alt="Баночка полезного корма Кэт Энерджи, со вкусом курицы.">
-
-          <a class="lead__btn" href="form.html">подобрать программу</a>
-        </section>
-
       </div> <!-- /container -->
     </header>
 
     <main class="main">
 
+      <section class="lead">
+        <h2 class="lead__title">Функциональное питание&nbsp;для&nbsp;котов</h2>
+        <p class="lead__text">Занялся собой? Займись котом!</p>
+
+        <img class="lead__img" src="img/index-can-mobile.png" width="280" height="270" alt="Баночка полезного корма Кэт Энерджи, со вкусом курицы.">
+
+        <a class="lead__btn button" href="form.html">подобрать программу</a>
+      </section>
+
       <h1 class="visually-hidden">Интернет-магазин здорового питания для ваших котиков</h1>
 
-      <section class="catalog">
+      <section class="product">
 
         <div class="container">
 
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <h3 class="catalog__title">похудение</h3>
-              <p class="catalog__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <ul class="product__list">
+            <li class="product__item">
+              <h3 class="product__title">похудение</h3>
+              <p class="product__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
 
-              <a class="catalog__btn" href="catalog.html">каталог slim 🠖</a>
+              <a class="product__btn" href="catalog.html">каталог slim</a>
             </li>
 
-            <li class="catalog__item">
-              <h3 class="catalog__title">Набор массы</h3>
-              <p class="catalog__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <li class="product__item">
+              <h3 class="product__title">Набор массы</h3>
+              <p class="product__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
 
-              <a class="catalog__btn" href="catalog.html">каталог pro 🠖</a>
+              <a class="product__btn" href="catalog.html">каталог pro</a>
             </li>
           </ul>
 
@@ -212,52 +211,51 @@
     </main>
 
     <footer class="footer">
-      <a href="#">
-        <svg aria-hidden="true" class="">
-          <use xlink:href="#name"></use>
-        </svg>
-      </a>
+      <div class="container">
+        <a href="#">
+          <svg aria-hidden="true" class="">
+            <use xlink:href="#name"></use>
+          </svg>
+        </a>
 
-      <ul class="footer__social">
+        <ul class="footer__social">
 
-        <li class="footer__item">
-          <a class="footer__link" href="https://vk.com/">
-            <svg aria-hidden="true" class="">
-              <use xlink:href="#vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="https://www.instagram.com/">
-            <svg aria-hidden="true" class="">
-              <use xlink:href="#instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="https://www.facebook.com/">
-            <svg aria-hidden="true" class="">
-              <use xlink:href="#fb"></use>
-            </svg>
-          </a>
-        </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://vk.com/">
+              <svg aria-hidden="true" class="">
+                <use xlink:href="#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.instagram.com/">
+              <svg aria-hidden="true" class="">
+                <use xlink:href="#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="https://www.facebook.com/">
+              <svg aria-hidden="true" class="">
+                <use xlink:href="#fb"></use>
+              </svg>
+            </a>
+          </li>
 
-      </ul>
+        </ul>
 
-      <ul class="footer__developer">
-        <li class="">
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            HTML Academy
-          </a>
-        </li>
-        <li class="">
-          <a href="https://htmlacademy.ru/intensive/adaptive">
-            <svg aria-hidden="true" class="">
-              <use xlink:href="#academy"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          HTML academy
+        </a>
+
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <svg aria-hidden="true" class="">
+            <use xlink:href="#academy"></use>
+          </svg>
+        </a>
+
+      </div> <!-- /container -->
 
     </footer>
 
