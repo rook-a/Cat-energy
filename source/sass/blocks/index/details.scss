@@ -1,6 +1,6 @@
-.details {
+// .details {
 
-}
+// }
 
 .details__title {
   font-family: "Oswald", "Arial", sans-serif;
@@ -33,7 +33,7 @@
     content: "";
   }
 
-  &::before{
+  &::before {
     width: 60px;
     height: 60px;
 
@@ -50,21 +50,19 @@
   }
 
   &:nth-child(1)::after {
-    background-image: url(../../../img/details/icon_leaf.svg);
-
-
+    background-image: url("../../../img/details/icon_leaf.svg");
   }
 
   &:nth-child(2)::after {
-    background-image: url(../../../img/details/icon_tub.svg);
+    background-image: url("../../../img/details/icon_tub.svg");
   }
 
   &:nth-child(3)::after {
-    background-image: url(../../../img/details/icon_eat.svg);
+    background-image: url("../../../img/details/icon_eat.svg");
   }
 
   &:nth-child(4)::after {
-    background-image: url(../../../img/details/icon_alarm.svg);
+    background-image: url("../../../img/details/icon_alarm.svg");
   }
 }
 

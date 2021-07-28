@@ -40,7 +40,7 @@
   height: 30px;
   margin: 0 auto 23px auto;
 
-  background-image: url(../../../img/catalog/icon/plus.svg);
+  background-image: url("../../../img/catalog/icon/plus.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
@@ -139,6 +139,6 @@
     color: $catalog-feature;
     background-color: $catalog-border;
 
-    opacity: .3;
+    opacity: 0.3;
   }
 }

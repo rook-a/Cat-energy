@@ -19,24 +19,24 @@
 
   &:hover,
   &:focus {
-    opacity: .8;
+    opacity: 0.8;
   }
 
   &:active {
-    opacity: .6;
+    opacity: 0.6;
   }
 }
 
 .footer__social {
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
- border-top: 1px solid $product-border;
- border-bottom: 1px solid $product-border;
+  border-top: 1px solid $product-border;
+  border-bottom: 1px solid $product-border;
 
- padding: 20px 0 20px 0;
- margin: 0 0 22px 0;
+  padding: 20px 0 20px 0;
+  margin: 0 0 22px 0;
 }
 
 .footer__item {
@@ -57,7 +57,7 @@
 
   &:active {
     fill: $basic-green;
-    opacity: .3;
+    opacity: 0.3;
   }
 
   &:focus .footer__fb {
@@ -66,7 +66,7 @@
 
   &:active .footer__fb {
     stroke: $basic-green;
-    opacity: .3;
+    opacity: 0.3;
   }
 }
 
@@ -91,7 +91,7 @@
 
   &:active,
   &:active .footer__academy-logo {
-    opacity: .3;
+    opacity: 0.3;
     fill: $basic-green;
   }
 }
@@ -102,5 +102,4 @@
 
 .footer__academy-logo {
   fill: $logo-academy;
-
 }
