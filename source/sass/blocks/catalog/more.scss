@@ -1,0 +1,91 @@
+.more {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-black;
+}
+
+.more__title {
+  font-size: 24px;
+  line-height: 24px;
+
+  margin: 25px 0 36px 0;
+}
+
+.more__list {
+  margin: 0;
+  padding: 0;
+}
+
+.more__item {
+  border-top: 1px solid $more-border;
+
+  padding: 12px 0 19px 0;
+
+  &--gift {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    min-width: 280px;
+    min-height: 290px;
+
+    background-image: url(../../../img/gift/gift-bg.jpg);
+    background-position: 50% 35px;
+    background-repeat: no-repeat;
+
+    padding: 35px 0;
+  }
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    top: 22%;
+    left: 48%;
+
+    width: 78px;
+    height: 80px;
+
+    background-image: url(../../../img/gift/gift-icon.svg);
+  }
+}
+
+.more__item-text {
+  width: 200px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+
+  text-align: center;
+  padding-top: 186px;
+  margin: 0;
+}
+
+.more__item-title {
+  font-size: 16px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+
+  color: $subtitle;
+
+  margin: 0 0 13px 0;
+}
+
+.more__amount,
+.more__price {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+
+  color: $basic-text;
+
+  margin: 0 0 15px 0;
+}
+
+// .more__amount {
+
+// }
+
+// .more__price {
+
+// }

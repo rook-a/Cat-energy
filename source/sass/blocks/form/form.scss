@@ -1,0 +1,39 @@
+.form {
+  font-size: 16px;
+  line-height: 18px;
+
+  text-transform: uppercase;
+
+  & input::placeholder,
+  & textarea::placeholder {
+    text-transform: uppercase;
+    color: $basic-text;
+  }
+
+  & input:not(input[type="radio"]):not(input[type="checkbox"]) {
+    height: 45px;
+
+    border: 1px solid $input;
+
+    padding-left: 15px;
+  }
+}
+
+.form__btn {
+  // text-align: center;
+
+  margin-bottom: 32px;
+
+  & .button {
+    margin-bottom: 21px;
+  }
+}
+
+.form__text-small {
+  font-size: 14px;
+  line-height: 16px;
+
+  text-transform: none;
+
+  color: $basic-black;
+}

@@ -1,0 +1,19 @@
+.message {
+  margin-bottom: 23px;
+
+
+  & textarea {
+    min-width: 280px;
+    border-color: $input;
+
+    padding: 10px 13px 0 13px;
+  }
+
+  & textarea::placeholder {
+    text-align: center;
+  }
+}
+
+.meaasge__title {
+  margin-bottom: 38px;
+}

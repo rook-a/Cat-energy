@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +7,10 @@
   <link rel="icon" href="source/img/favicon/152.png" type="image/svg+xml">
   <link rel="apple-touch-icon" href="source/img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
-<body>
+<body class="page__body">
   <!-- sprite -->
   <svg style="display: none;">
     <symbol id="logo" viewBox="0 0 34 38">
@@ -32,19 +33,19 @@
     </symbol>
 
     <symbol id="vk" viewBox="0 0 23 16">
-      <path d="M.07 3.993c0-.622.423-.957 1.27-1.006l3.26.018c.22 0 .365.091.438.274.336.915.711 1.704 1.127 2.369.416.664.96 1.43 1.63 2.295.059.11.154.165.285.165a.276.276 0 00.24-.128l.067-.201.021-3.165c0-.219-.062-.365-.186-.438-.124-.074-.353-.128-.689-.165-.263-.037-.394-.17-.394-.402 0-.05.007-.086.022-.11.306-.793 1.182-1.189 2.626-1.189l1.226-.018c.554 0 1.014.116 1.379.347.364.232.547.598.547 1.098v4.151a.562.562 0 00.284.092c.22 0 .409-.11.57-.33 1.604-1.877 2.472-3.133 2.604-3.767a.29.29 0 01.044-.092c.102-.182.27-.34.503-.475.233-.134.438-.226.613-.274a.507.507 0 01.197-.037h3.392l.219.018c.292 0 .518.116.678.348a.63.63 0 01.12.238c.022.085.037.17.044.256.008.085.011.134.011.146v.128c-.102.5-.36 1.033-.777 1.6-.415.567-.944 1.18-1.586 1.838-.642.659-1.044 1.092-1.204 1.299-.131.146-.197.28-.197.402 0 .098.058.208.175.33l3.195 3.365a.939.939 0 01.263.64c0 .28-.131.512-.394.695a1.826 1.826 0 01-.941.31l-.372.02h-3.327a.794.794 0 00-.087.008.802.802 0 01-.088.01c-.32 0-.62-.116-.897-.348-.102-.098-.788-.817-2.057-2.158a1.106 1.106 0 00-.307-.238c-.058.195-.135.475-.23.841-.094.366-.164.628-.207.787l-.066.31c-.146.427-.452.684-.92.769l-.306.018H9.743c-1.21 0-2.418-.463-3.622-1.39-1.203-.927-2.287-2.124-3.25-3.594-.963-1.469-1.86-3.18-2.691-5.13a1.254 1.254 0 01-.11-.53zM13.223 8.73a1.66 1.66 0 01-.831-.21c-.248-.14-.372-.333-.372-.577V3.737c0-.244-.073-.418-.22-.522-.145-.103-.4-.155-.765-.155l-1.248.036c-.627 0-1.101.092-1.422.275.642.256.963.67.963 1.243v3.22c-.03.304-.175.557-.438.758a1.405 1.405 0 01-.875.302c-.438 0-.774-.177-1.007-.53C5.87 6.925 5.024 5.559 4.469 4.267l-.197-.476-2.91-.018c-.19 0-.296.01-.318.028-.022.018-.033.07-.033.155 0 .11.015.226.044.348l.46 1.024c1.225 2.646 2.556 4.73 3.994 6.255 1.437 1.524 2.848 2.286 4.234 2.286h2.189c.088 0 .153-.021.197-.064.044-.043.08-.125.11-.247l.043-.183.416-1.61c.117-.219.219-.365.306-.438a.86.86 0 01.57-.201c.35 0 .707.176 1.072.53l1.86 1.975c.117.159.24.238.372.238h3.611c.438 0 .657-.091.657-.274a.312.312 0 00-.066-.183l-3.173-3.31c-.248-.257-.372-.531-.372-.824 0-.292.116-.573.35-.841.19-.244.558-.65 1.105-1.216a28.203 28.203 0 001.434-1.591c.408-.494.678-.942.81-1.345l.065-.237a.243.243 0 01-.022-.12c0-.054-.007-.1-.022-.137H17.82a1.199 1.199 0 00-.525.33l-.131.347c-.365.841-1.32 2.14-2.867 3.896a1.672 1.672 0 01-1.073.366z" fill="#666"/>
+      <path d="M.07 3.993c0-.622.423-.957 1.27-1.006l3.26.018c.22 0 .365.091.438.274.336.915.711 1.704 1.127 2.369.416.664.96 1.43 1.63 2.295.059.11.154.165.285.165a.276.276 0 00.24-.128l.067-.201.021-3.165c0-.219-.062-.365-.186-.438-.124-.074-.353-.128-.689-.165-.263-.037-.394-.17-.394-.402 0-.05.007-.086.022-.11.306-.793 1.182-1.189 2.626-1.189l1.226-.018c.554 0 1.014.116 1.379.347.364.232.547.598.547 1.098v4.151a.562.562 0 00.284.092c.22 0 .409-.11.57-.33 1.604-1.877 2.472-3.133 2.604-3.767a.29.29 0 01.044-.092c.102-.182.27-.34.503-.475.233-.134.438-.226.613-.274a.507.507 0 01.197-.037h3.392l.219.018c.292 0 .518.116.678.348a.63.63 0 01.12.238c.022.085.037.17.044.256.008.085.011.134.011.146v.128c-.102.5-.36 1.033-.777 1.6-.415.567-.944 1.18-1.586 1.838-.642.659-1.044 1.092-1.204 1.299-.131.146-.197.28-.197.402 0 .098.058.208.175.33l3.195 3.365a.939.939 0 01.263.64c0 .28-.131.512-.394.695a1.826 1.826 0 01-.941.31l-.372.02h-3.327a.794.794 0 00-.087.008.802.802 0 01-.088.01c-.32 0-.62-.116-.897-.348-.102-.098-.788-.817-2.057-2.158a1.106 1.106 0 00-.307-.238c-.058.195-.135.475-.23.841-.094.366-.164.628-.207.787l-.066.31c-.146.427-.452.684-.92.769l-.306.018H9.743c-1.21 0-2.418-.463-3.622-1.39-1.203-.927-2.287-2.124-3.25-3.594-.963-1.469-1.86-3.18-2.691-5.13a1.254 1.254 0 01-.11-.53zM13.223 8.73a1.66 1.66 0 01-.831-.21c-.248-.14-.372-.333-.372-.577V3.737c0-.244-.073-.418-.22-.522-.145-.103-.4-.155-.765-.155l-1.248.036c-.627 0-1.101.092-1.422.275.642.256.963.67.963 1.243v3.22c-.03.304-.175.557-.438.758a1.405 1.405 0 01-.875.302c-.438 0-.774-.177-1.007-.53C5.87 6.925 5.024 5.559 4.469 4.267l-.197-.476-2.91-.018c-.19 0-.296.01-.318.028-.022.018-.033.07-.033.155 0 .11.015.226.044.348l.46 1.024c1.225 2.646 2.556 4.73 3.994 6.255 1.437 1.524 2.848 2.286 4.234 2.286h2.189c.088 0 .153-.021.197-.064.044-.043.08-.125.11-.247l.043-.183.416-1.61c.117-.219.219-.365.306-.438a.86.86 0 01.57-.201c.35 0 .707.176 1.072.53l1.86 1.975c.117.159.24.238.372.238h3.611c.438 0 .657-.091.657-.274a.312.312 0 00-.066-.183l-3.173-3.31c-.248-.257-.372-.531-.372-.824 0-.292.116-.573.35-.841.19-.244.558-.65 1.105-1.216a28.203 28.203 0 001.434-1.591c.408-.494.678-.942.81-1.345l.065-.237a.243.243 0 01-.022-.12c0-.054-.007-.1-.022-.137H17.82a1.199 1.199 0 00-.525.33l-.131.347c-.365.841-1.32 2.14-2.867 3.896a1.672 1.672 0 01-1.073.366z"/>
     </symbol>
 
     <symbol id="instagram" viewBox="0 0 16 16">
-      <path d="M7.984.063c1.334 0 2.422.015 3.266.046.719.032 1.36.157 1.922.375.541.209 1.01.51 1.406.907.396.395.698.864.906 1.406.22.562.344 1.203.375 1.922.032.843.047 1.932.047 3.265 0 1.334-.015 2.422-.047 3.266-.03.719-.156 1.36-.375 1.922a3.987 3.987 0 01-.906 1.406 3.987 3.987 0 01-1.406.906c-.563.22-1.203.344-1.922.375-.844.032-1.932.047-3.266.047a91.88 91.88 0 01-3.265-.047c-.719-.03-1.36-.156-1.922-.375a3.987 3.987 0 01-1.406-.906 3.987 3.987 0 01-.907-1.406C.266 12.609.141 11.969.11 11.25a91.735 91.735 0 01-.046-3.266c0-1.333.015-2.421.046-3.265.032-.719.157-1.36.375-1.922.209-.542.51-1.01.907-1.406A3.987 3.987 0 012.797.484C3.359.266 4 .141 4.719.11A91.733 91.733 0 017.984.063zm0 1.03c-1.385 0-2.515.016-3.39.048-.563.02-1.084.12-1.563.296a2.853 2.853 0 00-1.594 1.594c-.177.48-.276 1-.296 1.563a98.83 98.83 0 00-.047 3.39c0 1.386.015 2.516.047 3.391.02.563.12 1.083.296 1.563.313.75.844 1.28 1.594 1.593.48.177 1 .276 1.563.297.875.031 2.005.047 3.39.047 1.386 0 2.516-.016 3.391-.047a5.015 5.015 0 001.563-.297 2.852 2.852 0 001.593-1.594c.177-.479.276-1 .297-1.562.031-.875.047-2.005.047-3.39 0-1.386-.016-2.516-.047-3.391a5.015 5.015 0 00-.297-1.563 2.853 2.853 0 00-1.594-1.594c-.479-.177-1-.276-1.562-.296a98.803 98.803 0 00-3.39-.047zm0 10.063c.875 0 1.623-.31 2.243-.93.62-.62.93-1.367.93-2.242s-.31-1.622-.93-2.242a3.056 3.056 0 00-2.243-.93c-.875 0-1.622.31-2.242.93-.62.62-.93 1.367-.93 2.242s.31 1.623.93 2.243c.62.62 1.367.93 2.242.93zm0-7.234c1.125 0 2.084.396 2.875 1.187.792.792 1.188 1.75 1.188 2.875s-.396 2.084-1.188 2.875c-.791.792-1.75 1.188-2.875 1.188s-2.083-.396-2.875-1.188c-.791-.791-1.187-1.75-1.187-2.875s.396-2.083 1.187-2.875c.792-.791 1.75-1.187 2.875-1.187zm5.188-.156c0 .26-.094.481-.281.664a.949.949 0 01-.688.273.904.904 0 01-.664-.273.904.904 0 01-.273-.664c0-.271.09-.5.273-.688a.891.891 0 01.664-.281.93.93 0 01.68.289.93.93 0 01.289.68z" fill="#666"/>
+      <path d="M7.984.063c1.334 0 2.422.015 3.266.046.719.032 1.36.157 1.922.375.541.209 1.01.51 1.406.907.396.395.698.864.906 1.406.22.562.344 1.203.375 1.922.032.843.047 1.932.047 3.265 0 1.334-.015 2.422-.047 3.266-.03.719-.156 1.36-.375 1.922a3.987 3.987 0 01-.906 1.406 3.987 3.987 0 01-1.406.906c-.563.22-1.203.344-1.922.375-.844.032-1.932.047-3.266.047a91.88 91.88 0 01-3.265-.047c-.719-.03-1.36-.156-1.922-.375a3.987 3.987 0 01-1.406-.906 3.987 3.987 0 01-.907-1.406C.266 12.609.141 11.969.11 11.25a91.735 91.735 0 01-.046-3.266c0-1.333.015-2.421.046-3.265.032-.719.157-1.36.375-1.922.209-.542.51-1.01.907-1.406A3.987 3.987 0 012.797.484C3.359.266 4 .141 4.719.11A91.733 91.733 0 017.984.063zm0 1.03c-1.385 0-2.515.016-3.39.048-.563.02-1.084.12-1.563.296a2.853 2.853 0 00-1.594 1.594c-.177.48-.276 1-.296 1.563a98.83 98.83 0 00-.047 3.39c0 1.386.015 2.516.047 3.391.02.563.12 1.083.296 1.563.313.75.844 1.28 1.594 1.593.48.177 1 .276 1.563.297.875.031 2.005.047 3.39.047 1.386 0 2.516-.016 3.391-.047a5.015 5.015 0 001.563-.297 2.852 2.852 0 001.593-1.594c.177-.479.276-1 .297-1.562.031-.875.047-2.005.047-3.39 0-1.386-.016-2.516-.047-3.391a5.015 5.015 0 00-.297-1.563 2.853 2.853 0 00-1.594-1.594c-.479-.177-1-.276-1.562-.296a98.803 98.803 0 00-3.39-.047zm0 10.063c.875 0 1.623-.31 2.243-.93.62-.62.93-1.367.93-2.242s-.31-1.622-.93-2.242a3.056 3.056 0 00-2.243-.93c-.875 0-1.622.31-2.242.93-.62.62-.93 1.367-.93 2.242s.31 1.623.93 2.243c.62.62 1.367.93 2.242.93zm0-7.234c1.125 0 2.084.396 2.875 1.187.792.792 1.188 1.75 1.188 2.875s-.396 2.084-1.188 2.875c-.791.792-1.75 1.188-2.875 1.188s-2.083-.396-2.875-1.188c-.791-.791-1.187-1.75-1.187-2.875s.396-2.083 1.187-2.875c.792-.791 1.75-1.187 2.875-1.187zm5.188-.156c0 .26-.094.481-.281.664a.949.949 0 01-.688.273.904.904 0 01-.664-.273.904.904 0 01-.273-.664c0-.271.09-.5.273-.688a.891.891 0 01.664-.281.93.93 0 01.68.289.93.93 0 01.289.68z"/>
     </symbol>
 
     <symbol id="fb" viewBox="0 0 22 22">
-      <path d="M16.5 1.833h-2.75a4.63 4.63 0 00-3.24 1.317 4.45 4.45 0 00-1.343 3.177v2.697h-2.75v3.595h2.75v7.191h3.666v-7.19h2.75l.917-3.596h-3.667V6.327a.89.89 0 01.269-.635.926.926 0 01.648-.263h2.75V1.833z" stroke="#666" fill="transparent"/>
+      <path d="M16.5 1.833h-2.75a4.63 4.63 0 00-3.24 1.317 4.45 4.45 0 00-1.343 3.177v2.697h-2.75v3.595h2.75v7.191h3.666v-7.19h2.75l.917-3.596h-3.667V6.327a.89.89 0 01.269-.635.926.926 0 01.648-.263h2.75V1.833z"/>
     </symbol>
 
     <symbol id="academy" viewBox="0 0 60 60">
-      <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+      <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
     </symbol>
 
   </svg>
@@ -53,10 +54,10 @@
     <div class="container">
 
       <a class="logo" href="index.html">
-        <svg aria-hidden="true" class="">
+        <svg class="logo__icon" aria-hidden="true" class="">
           <use xlink:href="#logo"></use>
         </svg>
-        <svg aria-hidden="true" class="">
+        <svg class="logo__text" width="101" height="18" aria-hidden="true" class="">
           <use xlink:href="#name"></use>
         </svg>
       </a>
@@ -94,23 +95,29 @@
 
         <ul class="catalog__list">
           <li class="catalog__item">
-            <a href="chicken.html">
-              <img src="img/catalog/chicken-500.jpg" width="68" height="86" alt="Изображение упаковки питания Кэт энерджи со вкусом курочки. Масса 500 грамм.">
+            <a class="catalog__link" href="chicken.html">
+              <img class="catalog__img" src="img/catalog/chicken-500.jpg" width="68" height="86" alt="Изображение упаковки питания Кэт энерджи со вкусом курочки. Масса 500 грамм.">
             </a>
 
-            <a href="chicken.html">
-              <h3>Cat&nbsp;Energy PRO 500&nbsp;г</h3>
+            <a class="catalog__link" href="chicken.html">
+              <h3 class="catalog__subtitle">Cat&nbsp;Energy PRO 500&nbsp;г</h3>
             </a>
 
-            <dl>
-              <dt>Масса</dt>
-              <dd>500 г</dd>
+            <dl class="catalog__feature">
+              <div class="catalog__weight">
+                <dt class="catalog__weight-title">Масса</dt>
+                <dd class="catalog__weight-text">500 г</dd>
+              </div>
 
-              <dt>Вкус</dt>
-              <dd>Курица</dd>
+              <div class="catalog__taste">
+                <dt class="catalog__taste-title">Вкус</dt>
+                <dd class="catalog__taste-text">Курица</dd>
+              </div>
 
-              <dt>Цена</dt>
-              <dd>700 Р.</dd>
+              <div class="catalog__price">
+                <dt class="catalog__price-title">Цена</dt>
+                <dd class="catalog__price-numbers">700 Р.</dd>
+              </div>
             </dl>
 
             <a class="catalog__btn button" href="form.html">заказать</a>
@@ -118,23 +125,29 @@
 
           <li class="catalog__item">
 
-            <a href="chicken.html">
-              <img src="img/catalog/chicken-1000.jpg" width="84" height="101" alt="Изображение упаковки питания Кэт энерджи со вкусом курочки. Масса 1000 грамм.">
+            <a class="catalog__link" href="chicken.html">
+              <img class="catalog__img" src="img/catalog/chicken-1000.jpg" width="84" height="101" alt="Изображение упаковки питания Кэт энерджи со вкусом курочки. Масса 1000 грамм.">
             </a>
 
-            <a href="chicken.html">
-              <h3>Cat&nbsp;Energy PRO 1000&nbsp;г</h3>
+            <a class="catalog__link" href="chicken.html">
+              <h3 class="catalog__subtitle">Cat&nbsp;Energy PRO 1000&nbsp;г</h3>
             </a>
 
-            <dl>
-              <dt>Масса</dt>
-              <dd>1000 г</dd>
+            <dl class="catalog__feature">
+              <div class="catalog__weight">
+                <dt class="catalog__weight-title">Масса</dt>
+                <dd class="catalog__weight-text">1000 г</dd>
+              </div>
 
-              <dt>Вкус</dt>
-              <dd>Курица</dd>
+              <div class="catalog__taste">
+                <dt class="catalog__taste-title">Вкус</dt>
+                <dd class="catalog__taste-text">Курица</dd>
+              </div>
 
-              <dt>Цена</dt>
-              <dd>1000 Р.</dd>
+              <div class="catalog__price">
+                <dt class="catalog__price-title">Цена</dt>
+                <dd class="catalog__price-numbers">1000 Р.</dd>
+              </div>
             </dl>
 
             <a class="catalog__btn button" href="form.html">заказать</a>
@@ -142,23 +155,29 @@
 
           <li class="catalog__item">
 
-            <a href="fish.html">
-              <img src="img/catalog/fish-500.jpg" width="68" height="78" alt="Изображение упаковки питания Кэт энерджи со вкусом рыбки. Масса 500 грамм.">
+            <a class="catalog__link" href="fish.html">
+              <img class="catalog__img" src="img/catalog/fish-500.jpg" width="68" height="78" alt="Изображение упаковки питания Кэт энерджи со вкусом рыбки. Масса 500 грамм.">
             </a>
 
-            <a href="fish.html">
-              <h3>Cat&nbsp;Energy PRO 500&nbsp;г</h3>
+            <a class="catalog__link" href="fish.html">
+              <h3 class="catalog__subtitle">Cat&nbsp;Energy PRO 500&nbsp;г</h3>
             </a>
 
-            <dl>
-              <dt>Масса</dt>
-              <dd>500 г</dd>
+            <dl class="catalog__feature">
+              <div class="catalog__weight">
+                <dt class="catalog__weight-title">Масса</dt>
+                <dd class="catalog__weight-text">500 г</dd>
+              </div>
 
-              <dt>Вкус</dt>
-              <dd>Рыба</dd>
+              <div class="catalog__taste">
+                <dt class="catalog__taste-title">Вкус</dt>
+                <dd class="catalog__taste-text">Рыба</dd>
+              </div>
 
-              <dt>Цена</dt>
-              <dd>700 Р.</dd>
+              <div class="catalog__price">
+                <dt class="catalog__price-title">Цена</dt>
+                <dd class="catalog__price-numbers">700 Р.</dd>
+              </div>
             </dl>
 
             <a class="catalog__btn button" href="form.html">заказать</a>
@@ -166,23 +185,29 @@
 
           <li class="catalog__item">
 
-            <a href="fish.html">
-              <img src="img/catalog/fish-1000.jpg" width="84" height="101" alt="Изображение упаковки питания Кэт энерджи со вкусом рыбки. Масса 1000 грамм.">
+            <a class="catalog__link" href="fish.html">
+              <img class="catalog__img" src="img/catalog/fish-1000.jpg" width="84" height="101" alt="Изображение упаковки питания Кэт энерджи со вкусом рыбки. Масса 1000 грамм.">
             </a>
 
-            <a href="fish.html">
-              <h3>Cat&nbsp;Energy PRO 1000&nbsp;г</h3>
+            <a class="catalog__link" href="fish.html">
+              <h3 class="catalog__subtitle">Cat&nbsp;Energy PRO 1000&nbsp;г</h3>
             </a>
 
-            <dl>
-              <dt>Масса</dt>
-              <dd>1000 г</dd>
+            <dl class="catalog__feature">
+              <div class="catalog__weight">
+                <dt class="catalog__weight-title">Масса</dt>
+                <dd class="catalog__weight-text">1000 г</dd>
+              </div>
 
-              <dt>Вкус</dt>
-              <dd>Рыба</dd>
+              <div class="catalog__taste">
+                <dt class="catalog__taste-title">Вкус</dt>
+                <dd class="catalog__taste-text">Рыба</dd>
+              </div>
 
-              <dt>Цена</dt>
-              <dd>1000 Р.</dd>
+              <div class="catalog__price">
+                <dt class="catalog__price-title">Цена</dt>
+                <dd class="catalog__price-numbers">1000 Р.</dd>
+              </div>
             </dl>
 
             <a class="catalog__btn button" href="form.html">заказать</a>
@@ -190,23 +215,29 @@
 
           <li class="catalog__item">
 
-            <a href="buckwheat.html">
-              <img src="img/catalog/buckwheat-500.jpg" width="68" height="78" alt="Изображение упаковки питания Кэт энерджи со вкусом гречки. Масса 500 грамм.">
+            <a class="catalog__link" href="buckwheat.html">
+              <img class="catalog__img" src="img/catalog/buckwheat-500.jpg" width="68" height="78" alt="Изображение упаковки питания Кэт энерджи со вкусом гречки. Масса 500 грамм.">
             </a>
 
-            <a href="buckwheat.html">
-              <h3>Cat&nbsp;Energy PRO 500&nbsp;г</h3>
+            <a class="catalog__link" href="buckwheat.html">
+              <h3 class="catalog__subtitle">Cat&nbsp;Energy PRO 500&nbsp;г</h3>
             </a>
 
-            <dl>
-              <dt>Масса</dt>
-              <dd>500 г</dd>
+            <dl class="catalog__feature">
+              <div class="catalog__weight">
+                <dt class="catalog__weight-title">Масса</dt>
+                <dd class="catalog__weight-text">500 г</dd>
+              </div>
 
-              <dt>Вкус</dt>
-              <dd>Гречка</dd>
+              <div class="catalog__taste">
+                <dt class="catalog__taste-title">Вкус</dt>
+                <dd class="catalog__taste-text">Гречка</dd>
+              </div>
 
-              <dt>Цена</dt>
-              <dd>400 Р.</dd>
+              <div class="catalog__price">
+                <dt class="catalog__price-title">Цена</dt>
+                <dd class="catalog__price-numbers">400 Р.</dd>
+              </div>
             </dl>
 
             <a class="catalog__btn button" href="form.html">заказать</a>
@@ -214,23 +245,29 @@
 
           <li class="catalog__item">
 
-            <a href="buckwheat.html">
-              <img src="img/catalog/buckwheat-1000.jpg" width="84" height="100" alt="Изображение упаковки питания Кэт энерджи со вкусом гречки. Масса 1000 грамм.">
+            <a class="catalog__link" href="buckwheat.html">
+              <img class="catalog__img" src="img/catalog/buckwheat-1000.jpg" width="84" height="100" alt="Изображение упаковки питания Кэт энерджи со вкусом гречки. Масса 1000 грамм.">
             </a>
 
-            <a href="buckwheat.html">
-              <h3>Cat&nbsp;Energy PRO 1000&nbsp;г</h3>
+            <a class="catalog__link" href="buckwheat.html">
+              <h3 class="catalog__subtitle">Cat&nbsp;Energy PRO 1000&nbsp;г</h3>
             </a>
 
-            <dl>
-              <dt>Масса</dt>
-              <dd>1000 г</dd>
+            <dl class="catalog__feature">
+              <div class="catalog__weight">
+                <dt class="catalog__weight-title">Масса</dt>
+                <dd class="catalog__weight-text">1000 г</dd>
+              </div>
 
-              <dt>Вкус</dt>
-              <dd>Гречка</dd>
+              <div class="catalog__taste">
+                <dt class="catalog__taste-title">Вкус</dt>
+                <dd class="catalog__taste-text">Гречка</dd>
+              </div>
 
-              <dt>Цена</dt>
-              <dd>700 Р.</dd>
+              <div class="catalog__price">
+                <dt class="catalog__price-title">Цена</dt>
+                <dd class="catalog__price-numbers">700 Р.</dd>
+              </div>
             </dl>
 
             <a class="catalog__btn button" href="form.html">заказать</a>
@@ -238,35 +275,41 @@
 
           <li class="catalog__item">
 
-            <a href="rice.html">
-              <img src="img/catalog/rice-500.jpg" width="74" height="86" alt="Изображение упаковки питания Кэт энерджи со вкусом риса. Масса 500 грамм.">
+            <a class="catalog__link" href="rice.html">
+              <img class="catalog__img" src="img/catalog/rice-500.jpg" width="74" height="86" alt="Изображение упаковки питания Кэт энерджи со вкусом риса. Масса 500 грамм.">
             </a>
 
-            <a href="rice.html">
-              <h3>Cat&nbsp;Energy PRO 500&nbsp;г</h3>
+            <a class="catalog__link" href="rice.html">
+              <h3 class="catalog__subtitle">Cat&nbsp;Energy PRO 500&nbsp;г</h3>
             </a>
 
-            <dl>
-              <dt>Масса</dt>
-              <dd>500 г</dd>
+            <dl class="catalog__feature">
+              <div class="catalog__weight">
+                <dt class="catalog__weight-title">Масса</dt>
+                <dd class="catalog__weight-text">500 г</dd>
+              </div>
 
-              <dt>Вкус</dt>
-              <dd>Рис</dd>
+              <div class="catalog__taste">
+                <dt class="catalog__taste-title">Вкус</dt>
+                <dd class="catalog__taste-text">Рис</dd>
+              </div>
 
-              <dt>Цена</dt>
-              <dd>500 Р.</dd>
+              <div class="catalog__price">
+                <dt class="catalog__price-title">Цена</dt>
+                <dd class="catalog__price-numbers">500 Р.</dd>
+              </div>
             </dl>
 
             <a class="catalog__btn button" href="form.html">заказать</a>
           </li>
-          <li>
-            <a href="catalog-full.html"></a> <!-- вставить иконку "+" через bg-img -->
+          <li class="catalog__item">
+            <a class="catalog__link-icon" href="catalog-full.html"></a> <!-- вставить иконку "+" через bg-img -->
 
-            <h3>Показать еще 100500 товаров</h3>
+            <h3 class="catalog__subtitle catalog__subtitle--more">Показать еще 100500 товаров</h3>
 
-            <p>На самом деле вкусов гораздо больше!</p>
+            <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
 
-            <a class="button" href="catalog-full.html">показать все</a>
+            <a class="catalog__btn--more button" href="catalog-full.html">показать все</a>
           </li>
         </ul>
 
@@ -280,39 +323,39 @@
 
         <ul class="more__list">
           <li class="more__item">
-            <h3>Сахарозаменитель</h3>
+            <h3 class="more__item-title">Сахарозаменитель</h3>
 
-            <p>1 упаковка (100 г)</p>
-            <p>200 Р.</p>
-
-            <a class="button" href="form.html">заказать</a>
-          </li>
-          <li class="more__item">
-            <h3>питьевая вода</h3>
-
-            <p>5 литров</p>
-            <p>50 Р.</p>
+            <p class="more__amount">1 упаковка (100 г)</p>
+            <p class="more__price">200 Р.</p>
 
             <a class="button" href="form.html">заказать</a>
           </li>
           <li class="more__item">
-            <h3>молоко</h3>
+            <h3 class="more__item-title">питьевая вода</h3>
 
-            <p>1 литр</p>
-            <p>100 Р.</p>
-
-            <a class="button" href="form.html">заказать</a>
-          </li>
-          <li class="more__item">
-            <h3>витамины</h3>
-
-            <p>1 упаковка (30 г)</p>
-            <p>300 Р.</p>
+            <p class="more__amount">5 литров</p>
+            <p class="more__price">50 Р.</p>
 
             <a class="button" href="form.html">заказать</a>
           </li>
           <li class="more__item">
-            <p>Закажите&nbsp;все
+            <h3 class="more__item-title">молоко</h3>
+
+            <p class="more__amount">1 литр</p>
+            <p class="more__price">100 Р.</p>
+
+            <a class="button" href="form.html">заказать</a>
+          </li>
+          <li class="more__item">
+            <h3 class="more__item-title">витамины</h3>
+
+            <p class="more__amount">1 упаковка (30 г)</p>
+            <p class="more__price">300 Р.</p>
+
+            <a class="button" href="form.html">заказать</a>
+          </li>
+          <li class="more__item more__item--gift">
+            <p class="more__item-text">Закажите&nbsp;все
               и&nbsp;получите&nbsp;чехол&nbsp;для
               кота&nbsp;в&nbsp;подарок!</p>
           </li>
@@ -324,13 +367,15 @@
     <section class="contact">
       <div class="container">
 
-        <h2 class="contact__title">приглашаем к сотрудничеству дилеров!</h2>
+        <div class="contact__info">
+          <h2 class="contact__title">приглашаем к сотрудничеству дилеров!</h2>
 
           <address class="contact__address">
             ул.&nbsp;Большая
             Конюшенная,&nbsp;д.&nbsp;19/8
             Санкт-Петербург
           </address>
+        </div>
 
           <div class="contact__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1569057868496!2d30.32173938014065!3d59.93913683706914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627054705509!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -342,8 +387,8 @@
 
   <footer class="footer">
     <div class="container">
-      <a href="#">
-        <svg aria-hidden="true" class="">
+      <a class="footer__logo" href="#">
+        <svg width="128" height="24" aria-hidden="true" class="">
           <use xlink:href="#name"></use>
         </svg>
       </a>
@@ -352,21 +397,21 @@
 
         <li class="footer__item">
           <a class="footer__link" href="https://vk.com/">
-            <svg aria-hidden="true" class="">
+            <svg width="23" height="16" aria-hidden="true" class="">
               <use xlink:href="#vk"></use>
             </svg>
           </a>
         </li>
         <li class="footer__item">
           <a class="footer__link" href="https://www.instagram.com/">
-            <svg aria-hidden="true" class="">
+            <svg width="16" height="16" aria-hidden="true" class="">
               <use xlink:href="#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="footer__item">
           <a class="footer__link" href="https://www.facebook.com/">
-            <svg aria-hidden="true" class="">
+            <svg class="footer__fb" width="22" height="22" aria-hidden="true" class="">
               <use xlink:href="#fb"></use>
             </svg>
           </a>
@@ -374,15 +419,17 @@
 
       </ul>
 
-      <a href="https://htmlacademy.ru/intensive/adaptive">
-        HTML academy
-      </a>
+      <div class="footer__dev">
+        <a class="footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML academy
+        </a>
 
-      <a href="https://htmlacademy.ru/intensive/adaptive">
-        <svg aria-hidden="true" class="">
-          <use xlink:href="#academy"></use>
-        </svg>
-      </a>
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="footer__academy-logo" width="27" height="34" aria-hidden="true" class="">
+            <use xlink:href="#academy"></use>
+          </svg>
+        </a>
+      </div>
     </div> <!-- /container -->
 
   </footer>

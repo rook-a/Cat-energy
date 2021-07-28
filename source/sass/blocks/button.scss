@@ -1,0 +1,27 @@
+.button {
+  display: block;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: $basic-white;
+  background-color: $basic-green;
+
+  border: none;
+  cursor: pointer;
+
+  padding: 7px 44px;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-hover;
+  }
+
+  &:active {
+    color: $btn-active;
+  }
+}

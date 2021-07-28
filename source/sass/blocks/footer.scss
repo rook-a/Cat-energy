@@ -1,0 +1,106 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 30px 0 22px 0;
+
+  background-color: $basic-grey;
+}
+
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+
+  width: 128px;
+  height: 24px;
+
+  margin-bottom: 32px;
+
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
+
+  &:active {
+    opacity: .6;
+  }
+}
+
+.footer__social {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ border-top: 1px solid $product-border;
+ border-bottom: 1px solid $product-border;
+
+ padding: 20px 0 20px 0;
+ margin: 0 0 22px 0;
+}
+
+.footer__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__link {
+  fill: $logo-academy;
+
+  &:hover,
+  &:focus {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: $basic-green;
+    opacity: .3;
+  }
+
+  &:focus .footer__fb {
+    stroke: $basic-green;
+  }
+
+  &:active .footer__fb {
+    stroke: $basic-green;
+    opacity: .3;
+  }
+}
+
+.footer__fb {
+  fill: none;
+  stroke: $logo-academy;
+
+  &:hover {
+    stroke: $basic-green;
+  }
+}
+
+.footer__dev {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover .footer__academy-logo,
+  &:focus .footer__academy-logo {
+    fill: $basic-green;
+  }
+
+  &:active,
+  &:active .footer__academy-logo {
+    opacity: .3;
+    fill: $basic-green;
+  }
+}
+
+.footer__academy-text {
+  color: $special-dark-grey;
+}
+
+.footer__academy-logo {
+  fill: $logo-academy;
+
+}
