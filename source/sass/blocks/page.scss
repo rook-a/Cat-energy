@@ -1,0 +1,37 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
+  min-width: 320px;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  color: $basic-text;
+  background-color: $basic-white;
+}
+
+.page__body a {
+  text-decoration: none;
+}
+
+.page__body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page__body ul {
+  list-style: none;
+}

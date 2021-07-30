@@ -1,0 +1,96 @@
+.sample {
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $basic-black;
+
+  background-color: $sample-bg;
+
+  padding: 27px 0 31px 0;
+}
+
+// .sample__title {
+
+// }
+
+.sample__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  margin: 0 0 25px 0;
+  color: $special-dark-grey;
+}
+
+.sample__list {
+  margin: 0;
+}
+
+.sample__item {
+  display: flex;
+
+  &:nth-child(3) {
+    line-height: 20px;
+
+    color: $basic-black;
+    text-transform: uppercase;
+  }
+
+  &:nth-child(1) .sample__term,
+  &:nth-child(2) .sample__term {
+    font-family: "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  &:nth-child(1) .sample__description,
+  &:nth-child(2) .sample__description {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &:nth-child(3) .sample__term,
+  &:nth-child(3) .sample__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+// .sample__term {
+
+// }
+
+.sample__description {
+  margin: 0;
+}
+
+// .sample__slider {
+
+// }
+
+// .sample__img {
+
+// }
+
+// .sample__img--before {
+
+// }
+
+.sample__img--after {
+  display: none;
+}
+
+// .sample__buttons {
+
+// }
+
+.sample__btn {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: $basic-black;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

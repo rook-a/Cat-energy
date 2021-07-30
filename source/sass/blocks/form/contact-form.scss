@@ -1,0 +1,16 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 24px;
+}
+
+.contact-form__title {
+  margin-bottom: 35px;
+}
+
+.contact-form__mail,
+.contact-form__phone {
+  @include input-font;
+  @include input-size;
+}

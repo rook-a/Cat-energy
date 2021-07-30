@@ -1,0 +1,15 @@
+@mixin input-font {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+@mixin input-size {
+  height: 45px;
+
+  border: 1px solid $input;
+
+  padding-left: 15px;
+}

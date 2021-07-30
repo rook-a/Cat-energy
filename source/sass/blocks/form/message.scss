@@ -1,0 +1,20 @@
+.message {
+  margin-bottom: 23px;
+}
+
+.meaasge__title {
+  margin-bottom: 38px;
+}
+
+.message__text {
+  @include input-font;
+
+  min-width: 280px;
+  border-color: $input;
+
+  padding: 10px 13px 0 13px;
+
+  &::placeholder {
+    text-align: center;
+  }
+}

@@ -1,1 +1,40 @@
-// Начните писать стили здесь
+//Global
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/normalize.css";
+@import "global/visually-hidden.scss";
+@import "global/mixins.scss";
+
+//Blocks
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/container.scss";
+@import "blocks/footer.scss";
+@import "blocks/button.scss";
+@import "blocks/contact.scss";
+@import "blocks/title.scss";
+@import "blocks/caption.scss";
+@import "blocks/heading.scss";
+
+//Index
+@import "blocks/index/logo.scss";
+@import "blocks/index/nav.scss";
+@import "blocks/index/lead.scss";
+@import "blocks/index/product.scss";
+@import "blocks/index/details.scss";
+@import "blocks/index/sample.scss";
+
+//Catalog
+@import "blocks/catalog/catalog.scss";
+@import "blocks/catalog/more.scss";
+
+//Form
+@import "blocks/form/program.scss";
+@import "blocks/form/pick.scss";
+@import "blocks/form/form.scss";
+@import "blocks/form/about.scss";
+@import "blocks/form/choice.scss";
+@import "blocks/form/contact-form.scss";
+@import "blocks/form/message.scss";
+@import "blocks/form/checkbox.scss";
+@import "blocks/form/border.scss";

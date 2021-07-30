@@ -1,0 +1,36 @@
+.contact {
+  background-color: $basic-grey;
+
+  &--main {
+    background-color: $basic-white;
+  }
+}
+
+.contact__info {
+  display: flex;
+
+  padding: 28px 0 26px 0;
+}
+
+.contact__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: $basic-title;
+
+  margin: 0;
+}
+
+.contact__address {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+}
+
+// .contact__map {
+
+// }
