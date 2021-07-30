@@ -3,20 +3,6 @@
   line-height: 18px;
 
   text-transform: uppercase;
-
-  & input::placeholder,
-  & textarea::placeholder {
-    text-transform: uppercase;
-    color: $basic-text;
-  }
-
-  & input:not(input[type="radio"]):not(input[type="checkbox"]) {
-    height: 45px;
-
-    border: 1px solid $input;
-
-    padding-left: 15px;
-  }
 }
 
 .form__btn {
@@ -30,6 +16,7 @@
 }
 
 .form__text-small {
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
 

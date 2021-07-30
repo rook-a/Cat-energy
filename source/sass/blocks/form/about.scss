@@ -8,3 +8,10 @@
   margin: 0 0 22px 0;
   padding: 0 0 25px 0;
 }
+
+.about__name,
+.about__weight,
+.about__age {
+  @include input-font;
+  @include input-size;
+}

@@ -7,13 +7,9 @@
   padding: 27px 0 31px 0;
 }
 
-.sample__title {
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
+// .sample__title {
 
-  margin: 0 0 38px 0;
-}
+// }
 
 .sample__text {
   font-family: "Arial", sans-serif;
@@ -82,12 +78,12 @@
   display: none;
 }
 
-// .sample__btn {
+// .sample__buttons {
 
 // }
 
-.sample__btn--before,
-.sample__btn--after {
+.sample__btn {
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
 

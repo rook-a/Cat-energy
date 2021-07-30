@@ -3,6 +3,7 @@
 @import "global/variables.scss";
 @import "global/normalize.css";
 @import "global/visually-hidden.scss";
+@import "global/mixins.scss";
 
 //Blocks
 @import "blocks/page.scss";
@@ -11,6 +12,9 @@
 @import "blocks/footer.scss";
 @import "blocks/button.scss";
 @import "blocks/contact.scss";
+@import "blocks/title.scss";
+@import "blocks/caption.scss";
+@import "blocks/heading.scss";
 
 //Index
 @import "blocks/index/logo.scss";
@@ -33,5 +37,4 @@
 @import "blocks/form/contact-form.scss";
 @import "blocks/form/message.scss";
 @import "blocks/form/checkbox.scss";
-@import "blocks/form/title.scss";
 @import "blocks/form/border.scss";

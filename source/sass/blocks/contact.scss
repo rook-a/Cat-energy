@@ -1,6 +1,4 @@
 .contact {
-  line-height: 20px;
-
   background-color: $basic-grey;
 
   &--main {
@@ -17,7 +15,8 @@
 .contact__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-
+  line-height: 18px;
+  font-weight: 400;
   text-transform: uppercase;
 
   color: $basic-title;
@@ -28,6 +27,7 @@
 .contact__address {
   font-family: "Arial", sans-serif;
   font-size: 14px;
+  line-height: 20px;
   font-style: normal;
 }
 
