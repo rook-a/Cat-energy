@@ -1,3 +1,23 @@
 .header {
   position: relative;
+  text-align: center;
+  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 27px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+  }
+}
+
+.header__grid {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    align-items: center;
+    justify-content: center;
+  }
 }

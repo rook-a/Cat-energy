@@ -5,9 +5,17 @@
 .product__list {
   padding: 0;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+  }
 }
 
 .product__item {
+  position: relative;
+
   padding: 30px 20px 22px;
 
   background-color: $basic-grey;
@@ -18,31 +26,77 @@
     margin-bottom: 27px;
   }
 
-  &:nth-child(1) .product__title::after {
-    top: -7px;
-    left: 6px;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+  }
+
+  &::before {
+    top: 11%;
+    left: 5%;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    background-color: $basic-green;
+  }
+
+  &:nth-child(1)::after {
+    top: 11%;
+    left: 6%;
 
     width: 37px;
     height: 50px;
 
     background-image: url("../../../img/catalog/icon/cat-slim.svg");
     background-repeat: no-repeat;
+    background-size: 100%;
   }
 
-  &:nth-child(2) .product__title::after {
-    top: 3px;
-    left: -11px;
+  &:nth-child(2)::after {
+    top: 15%;
+    left: 3%;
 
     width: 67px;
     height: 28px;
 
     background-image: url("../../../img/catalog/icon/cat-pro.svg");
     background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 50% 57px 53px;
+
+    &::before {
+      top: 25%;
+      left: 65%;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &:nth-child(1)::after {
+      top: 23%;
+      left: 69%;
+
+      width: 141px;
+      height: 194px;
+    }
+
+    &:nth-child(2)::after {
+      top: 37%;
+      left: 60%;
+
+      width: 269px;
+      height: 113px;
+    }
   }
 }
 
 .product__title {
-  position: relative;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -53,21 +107,18 @@
   margin: 0 0 29px 0;
   padding-left: 70px;
 
-  &::before,
-  &::after {
-    position: absolute;
-    content: "";
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+
+    padding-left: 0;
   }
 
-  &::before {
-    top: -5px;
-    left: 0;
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
 
-    width: 50px;
-    height: 50px;
-
-    border-radius: 50%;
-    background-color: $basic-green;
+    padding-left: 0;
   }
 }
 
@@ -82,6 +133,20 @@
 
   margin: 0 0 20px 0;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+
+    border-bottom: none;
+  }
 }
 
 .product__btn {
@@ -108,5 +173,15 @@
   &:active {
     background-image: url("../../../img/catalog/icon/arrow-hover.svg");
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: auto;
   }
 }

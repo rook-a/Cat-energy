@@ -1,9 +1,8 @@
 .lead {
   background-image: url("../../../img/cat-bg.jpg");
-  background-position: 50% 23%;
+  background-position: 50% 0;
   background-repeat: no-repeat;
-  background-color: $basic-green;
-  background-blend-mode: overlay;
+  background-size: 100%;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -11,12 +10,40 @@
 
   text-align: center;
   padding: 25px 0 0 0;
+  margin: 0 0 22px 0;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../../img/cat-bg.jpg");
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 0 82px 50%;
+  }
 }
 
 .lead__title {
   color: $basic-white;
 
   margin: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+
+    color: $basic-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+
+    color: $basic-black;
+  }
 }
 
 .lead__text {
@@ -25,6 +52,20 @@
 
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    color: $basic-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    color: $basic-black;
+  }
 }
 
 .lead__img {
@@ -34,4 +75,14 @@
 .lead__btn {
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-style: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-style: 20px;
+    line-height: 20px;
+  }
 }
