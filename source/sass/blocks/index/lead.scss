@@ -24,8 +24,7 @@
     position: relative;
     height: 500px;
 
-    background-image: linear-gradient(to right, $basic-white 0%, $basic-white 50%, transparent 50%),
-    url("../../../img/cat-bg-desktop.jpg");
+    background-image: linear-gradient(to right, $basic-white 0%, $basic-white 50%, transparent 50%), url("../../../img/cat-bg-desktop.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -89,7 +88,6 @@
 
 .lead__img {
   margin: 0 auto;
-
 }
 
 .lead__btn {
