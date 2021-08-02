@@ -11,12 +11,17 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding: 55px 0 61px 0;
+
     &--grid {
       flex-direction: row;
+      justify-content: space-between;
     }
   }
 
   @media (min-width: $desktop-width) {
+    padding: 57px 0;
+
     &--grid {
       flex-direction: row;
       justify-content: space-between;

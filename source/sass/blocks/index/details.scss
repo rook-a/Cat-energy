@@ -1,6 +1,8 @@
-// .details {
-
-// }
+.details {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13%;
+  }
+}
 
 // .details__title {
 

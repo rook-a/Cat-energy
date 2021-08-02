@@ -9,8 +9,8 @@
 }
 
 .contact__info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
 
   align-items: center;
 
@@ -20,8 +20,6 @@
 
   @media (min-width: $tablet-width) {
     height: 200px;
-    justify-content: flex-end;
-    grid-column-gap: 25%;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,8 +28,6 @@
     left: 7%;
 
     display: flex;
-    justify-content: space-around;
-    grid-column-gap: 25%;
 
     height: 200px;
     width: 500px;
@@ -66,21 +62,15 @@
   font-style: normal;
   text-align: right;
 
-  padding-left: 40%;
-
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-
-    text-align: right;
-    padding-left: 40%;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 20px;
 
-    text-align: right;
     padding-left: 0;
   }
 }
