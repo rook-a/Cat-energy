@@ -6,9 +6,21 @@
   text-transform: uppercase;
 
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .nav__button {
+  position: absolute;
+  top: 5%;
+  left: 90%;
+
   width: 24px;
   height: 2px;
 
@@ -16,6 +28,10 @@
 
   background: none;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .nav__button-middle {
@@ -53,26 +69,43 @@
 }
 
 .nav__wrapper {
-  text-align: center;
+  // text-align: center;
   background-color: $basic-white;
 }
 
 .nav__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-end;
+  }
 }
 
 .nav__item {
+  margin-right: 35px;
+
   border-top: 1px solid $basic-border;
 
   &:last-child {
     border-bottom: 1px solid $basic-border;
+    margin-right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+
+    &:last-child {
+      border: none;
+    }
   }
 }
 
 .nav__link {
   display: block;
-  height: 100%;
   width: 100%;
 
   padding: 23px 0;
@@ -87,8 +120,16 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 10px;
+  }
 }
 
 .current {
-  border-bottom: 2px solid $basic-green;
+  border-bottom: none;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic-green;
+  }
 }

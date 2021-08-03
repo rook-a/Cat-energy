@@ -1,4 +1,6 @@
 .contact {
+  position: relative;
+
   background-color: $basic-grey;
 
   &--main {
@@ -8,8 +10,32 @@
 
 .contact__info {
   display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+
+  height: 114px;
 
   padding: 28px 0 26px 0;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+
+    display: flex;
+
+    height: 200px;
+    width: 500px;
+
+    background-color: $basic-white;
+
+    padding: 30px 50px;
+  }
 }
 
 .contact__title {
@@ -22,6 +48,11 @@
   color: $basic-title;
 
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .contact__address {
@@ -29,8 +60,30 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 20px;
+
+    padding-left: 0;
+  }
+}
+
+.contact__sity {
+  display: inline-block;
+  padding-top: 15px;
 }
 
 // .contact__map {
 
 // }
+
+.contact__frame {
+  width: 100%;
+}

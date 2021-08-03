@@ -1,21 +1,36 @@
-// .details {
-
-// }
+.details {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13%;
+  }
+}
 
 // .details__title {
 
 // }
 
 .details__list {
-  width: 280px;
-
   margin: 0 0 42px 0;
   padding: 0;
+
+
+  counter-reset: count;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 130px;
+    grid-row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 80px;
+  }
 }
 
 .details__item {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 
   &:last-child {
     margin-bottom: 0;
@@ -58,11 +73,60 @@
   &:nth-child(4)::after {
     background-image: url("../../../img/details/icon_alarm.svg");
   }
+
+  // &:nth-child(2n) {
+  //   margin-right: 75px;
+  // }
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      top: 15%;
+
+      background-position: 25px 25px;
+    }
+  }
 }
 
 .details__text {
-  padding-left: 80px;
+  padding: 0 50% 0 80px;
   margin: 0;
 
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+
+    padding: 100px 10% 0 0;
+
+    &::before {
+      position: absolute;
+
+      top: -5%;
+      right: 18%;
+
+      counter-increment: count;
+      content: counter(count);
+
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 280px;
+
+      color: $basic-grey;
+
+      z-index: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
 }
