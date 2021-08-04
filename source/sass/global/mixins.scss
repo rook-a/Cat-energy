@@ -4,6 +4,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 @mixin input-size {

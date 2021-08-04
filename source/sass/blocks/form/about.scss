@@ -3,10 +3,17 @@
   flex-direction: column;
 
   border: none;
-  border-bottom: 1px solid $product-border;
 
   margin: 0 0 22px 0;
   padding: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 45%;
+  }
 }
 
 .about__name,

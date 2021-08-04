@@ -10,6 +10,18 @@
 .catalog__list {
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 63px 80px;
+  }
 }
 
 .catalog__item {
@@ -19,6 +31,14 @@
 
   &:last-child {
     border-bottom: 1px solid $catalog-border;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+
+    &:last-child {
+      border: none;
+    }
   }
 }
 
@@ -53,6 +73,18 @@
 
 .catalog__subtitle--more {
   margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    & .catalog__link-icon {
+      margin-bottom: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & .catalog__link-icon {
+      margin-bottom: 23px;
+    }
+  }
 }
 
 .catalog__text {
@@ -120,6 +152,28 @@
 // .catalog__price-numbers {
 
 // }
+
+.catalog__more {
+  @media (min-width: $tablet-width) {
+    & .catalog__link-icon {
+      margin-bottom: 49px;
+    }
+
+    & .catalog__text {
+      margin-bottom: 87px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    & .catalog__link-icon {
+      margin-bottom: 49px;
+    }
+
+    & .catalog__text {
+      margin-bottom: 87px;
+    }
+  }
+}
 
 .catalog__btn {
   padding: 10px 109px;

@@ -19,7 +19,7 @@
 .nav__button {
   position: absolute;
   top: 5%;
-  left: 90%;
+  left: 85%;
 
   width: 24px;
   height: 2px;
@@ -86,8 +86,6 @@
 }
 
 .nav__item {
-  margin-right: 35px;
-
   border-top: 1px solid $basic-border;
 
   &:last-child {
@@ -96,6 +94,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-right: 35px;
+
     border: none;
 
     &:last-child {
