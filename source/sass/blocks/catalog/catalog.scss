@@ -96,6 +96,9 @@
 }
 
 .catalog__feature {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -109,51 +112,9 @@
   }
 }
 
-.catalog__weight,
-.catalog__taste,
-.catalog__price {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-// .catalog__weight {
-
-// }
-
-// .catalog__weight-title {
-
-// }
-
-// .catalog__weight-text {
-
-// }
-
-// .catalog__taste {
-
-// }
-
-// .catalog__taste-title {
-
-// }
-
-// .catalog__taste-text {
-
-// }
-
-// .catalog__price {
-
-// }
-
-// .catalog__price-title {
-
-// }
-
-// .catalog__price-numbers {
-
-// }
-
 .catalog__more {
+  text-align: center;
+
   @media (min-width: $tablet-width) {
     & .catalog__link-icon {
       margin-bottom: 49px;
@@ -176,13 +137,14 @@
 }
 
 .catalog__btn {
-  padding: 10px 109px;
+  min-width: 250px;
+  padding: 10px;
 
   &--more {
     color: $catalog-feature;
     background-color: $basic-grey;
 
-    padding: 10px 94px;
+    padding: 10px;
   }
 
   &--more:hover,

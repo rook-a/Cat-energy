@@ -1,5 +1,6 @@
 .button {
   display: block;
+  min-width: 250px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -14,7 +15,7 @@
   border: none;
   cursor: pointer;
 
-  padding: 7px 44px;
+  padding: 10px;
 
   &:hover,
   &:focus {

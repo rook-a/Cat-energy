@@ -67,14 +67,8 @@
   align-items: center;
 
   & .sample__price {
-    display: flex;
-    justify-content: center;
-
     grid-column: 1 / -1;
-  }
 
-  & .sample__price-title,
-  & .sample__price-numbers {
     font-size: 14px;
     line-height: 20px;
     text-transform: uppercase;
@@ -82,23 +76,21 @@
     margin: 0;
   }
 
+
   @media (min-width: $tablet-width) {
     margin-bottom: 200px;
 
     & .sample__price {
       grid-column: 2 / -1;
 
-      display: block;
       text-align: right;
-    }
 
-    & .sample__price-title {
-      margin-bottom: 10px;
-    }
-
-    & .sample__price-title,
-    & .sample__price-numbers {
       font-size: 20px;
+    }
+
+    & .sample__price-numbers {
+      display: block;
+      margin-top: 10px;
     }
   }
 
@@ -116,6 +108,10 @@
 
       display: flex;
       justify-content: flex-start;
+    }
+
+    & .sample__price-numbers {
+      margin: 0 0 0 10px;
     }
   }
 }
@@ -201,7 +197,7 @@
   line-height: 12px;
   text-transform: none;
 
-  padding: 0 10px;
+  padding: 0 5px;
   background-color: $sample-bg;
   color: $special-dark-grey;
 }

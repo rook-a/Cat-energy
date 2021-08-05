@@ -29,16 +29,11 @@
   }
 }
 
-.checkbox__sweetener,
-.checkbox__milk,
-.checkbox__water,
-.checkbox__vitamins {
-  margin-bottom: 50px;
+.checkbox__input {
+  display: none;
 }
 
-.checkbox__sweetener,
-.checkbox__milk {
-  width: auto;
+.checkbox__label {
   margin-bottom: 50px;
 
   @media (min-width: $tablet-width) {
@@ -46,15 +41,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: auto;
-    margin-right: 50px;
-  }
-}
-
-.checkbox__water,
-.checkbox__vitamins {
-  @media (min-width: $desktop-width) {
-    width: auto;
-    margin-right: 50px;
+    width: 25%;
   }
 }

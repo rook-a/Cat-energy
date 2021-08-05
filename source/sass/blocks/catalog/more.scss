@@ -64,7 +64,7 @@
 .more__gift {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 
   position: relative;
 
@@ -79,11 +79,13 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
+    align-items: center;
     background-size: 100%;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: center;
+    align-items: flex-end;
     grid-column: 2 / -1;
     background-size: auto;
   }
@@ -119,17 +121,17 @@
   color: $basic-white;
 
   text-align: center;
-  padding-top: 186px;
+  padding: 42px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    padding: 0;
+    padding: 50px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    padding-top: 186px;
+    padding: 42px;
   }
 }
 
