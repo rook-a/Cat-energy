@@ -2,9 +2,45 @@
   display: flex;
   flex-direction: column;
 
-  margin-bottom: 34px;
+  padding: 0;
+  margin: 0 0 34px 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .checkbox__title {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 57px;
+  }
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__label {
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 }

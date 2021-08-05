@@ -51,13 +51,13 @@
   </svg>
 
   <header class="header">
-    <div class="container">
+    <div class="container header__grid">
 
       <a class="logo" href="index.html">
-        <svg class="logo__icon" width="34" height="38" aria-hidden="true" class="">
+        <svg class="logo__icon" width="34" height="38" aria-hidden="true">
           <use xlink:href="#logo"></use>
         </svg>
-        <svg class="logo__text" aria-hidden="true" class="">
+        <svg class="logo__text" aria-hidden="true">
           <use xlink:href="#name"></use>
         </svg>
       </a>
@@ -70,13 +70,13 @@
         <div class="nav__wrapper">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link current" href="index.html">главная</a>
+              <a class="nav__link" href="index.html">главная</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">подбор программы</a>
+              <a class="nav__link current" href="#">подбор программы</a>
             </li>
           </ul>
         </div>
@@ -95,59 +95,62 @@
           программу питания для вашего кота</p>
 
         <form class="form" action="#" method="POST">
-          <fieldset class="about">
-            <label for="monicker">имя<sup>*</sup></label>
-            <input
-              class="about__name"
-              id="monicker"
-              type="text"
-              placeholder="барсик"
-              required>
+          <div class="form__wrapper">
+            <fieldset class="about">
+              <label for="monicker">имя<sup>*</sup></label>
+              <input
+                class="about__name"
+                id="monicker"
+                type="text"
+                placeholder="барсик"
+                required>
 
-            <label for="weight">вес (кг):<sup>*</sup></label>
-            <input
-              class="about__weight"
-              id="weight"
-              type="text"
-              placeholder="7"
-              required>
+              <label for="weight">вес (кг):<sup>*</sup></label>
+              <input
+                class="about__weight"
+                id="weight"
+                type="text"
+                placeholder="7"
+                required>
 
-            <label for="age">возраст (лет):</label>
-            <input
-              class="about__age"
-              id="age"
-              type="text"
-              placeholder="7">
-          </fieldset>
+              <label for="age">возраст (лет):</label>
+              <input
+                class="about__age"
+                id="age"
+                type="text"
+                placeholder="7">
+            </fieldset>
 
-          <fieldset class="choice">
-            <input
-              id="slim"
-              name="choice"
-              type="radio"
-              value="sliming"
-              checked>
-            <label for="slim">похудение</label>
+            <fieldset class="choice">
+              <input
+                id="slim"
+                name="choice"
+                type="radio"
+                value="sliming"
+                checked>
+              <label for="slim">похудение</label>
 
-            <input
-              id="bulk"
-              name="choice"
-              type="radio"
-              value="bulk">
-            <label for="bulk">Набор массы</label>
+              <input
+                id="bulk"
+                name="choice"
+                type="radio"
+                value="bulk">
+              <label for="bulk">Набор массы</label>
 
-            <input
-              id="advice"
-              name="choice"
-              type="radio"
-              value="advice">
-            <label for="advice">Не знаю (Нужен ваш совет)</label>
-          </fieldset>
+              <input
+                id="advice"
+                name="choice"
+                type="radio"
+                value="advice">
+              <label for="advice">Не знаю (Нужен ваш совет)</label>
+            </fieldset>
+          </div> <!-- /form__wrapper -->
 
           <fieldset class="contact-form border">
             <legend class="contact-form__title caption">Контактные данные (владельца кота)</legend>
 
-            <label for="email">E-mail:<sup>*</sup></label>
+            <label
+              class="contact-form__email-title" for="email">E-mail:<sup>*</sup></label>
             <input
               class="contact-form__mail"
               id="email"
@@ -155,7 +158,8 @@
               placeholder="kuklachev@gmail.com"
               required>
 
-            <label for="phone">Телефон:<sup>*</sup></label>
+            <label
+              class="contact-form__phone-title" for="phone">Телефон:<sup>*</sup></label>
             <input
               class="contact-form__phone"
               id="phone"
@@ -181,29 +185,33 @@
             <legend class="checkbox__title caption">Дополнительно</legend>
 
             <input
+              class="checkbox__input"
               id="sweetener"
               name="sweetener"
               type="checkbox"
               checked>
-            <label for="sweetener">сахарозаменитель</label>
+            <label class="checkbox__label" for="sweetener">сахарозаменитель</label>
 
             <input
+              class="checkbox__input"
               id="water"
               name="water"
               type="checkbox">
-            <label for="water">питьевая вода</label>
+            <label class="checkbox__label" for="water">питьевая вода</label>
 
             <input
+              class="checkbox__input"
               id="milk"
               name="milk"
               type="checkbox">
-            <label for="milk">молоко</label>
+            <label class="checkbox__label" for="milk">молоко</label>
 
             <input
+              class="checkbox__input"
               id="vitamins"
               name="vitamins"
               type="checkbox">
-            <label for="vitamins">витамины</label>
+            <label class="checkbox__label" for="vitamins">витамины</label>
           </fieldset>
 
           <div class="form__btn">
@@ -226,22 +234,22 @@
           <address class="contact__address">
             ул.&nbsp;Большая
             Конюшенная,&nbsp;д.&nbsp;19/8
-            Санкт-Петербург
+              <span class="contact__sity">Санкт-Петербург</span>
           </address>
         </div>
-
-          <div class="contact__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1569057868496!2d30.32173938014065!3d59.93913683706914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627054705509!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-
       </div> <!-- /container -->
+
+      <div class="contact__map">
+        <iframe class="contact__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1569057868496!2d30.32173938014065!3d59.93913683706914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627054705509!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
+    <div class="container footer--grid">
       <a class="footer__logo" href="#">
-        <svg width="128" height="24" aria-hidden="true" class="">
+        <svg width="128" height="24" aria-hidden="true">
           <use xlink:href="#name"></use>
         </svg>
       </a>
@@ -250,21 +258,21 @@
 
         <li class="footer__item">
           <a class="footer__link" href="https://vk.com/">
-            <svg width="23" height="16" aria-hidden="true" class="">
+            <svg width="23" height="16" aria-hidden="true">
               <use xlink:href="#vk"></use>
             </svg>
           </a>
         </li>
         <li class="footer__item">
           <a class="footer__link" href="https://www.instagram.com/">
-            <svg width="16" height="16" aria-hidden="true" class="">
+            <svg width="16" height="16" aria-hidden="true">
               <use xlink:href="#instagram"></use>
             </svg>
           </a>
         </li>
         <li class="footer__item">
           <a class="footer__link" href="https://www.facebook.com/">
-            <svg class="footer__fb" width="22" height="22" aria-hidden="true" class="">
+            <svg class="footer__fb" width="22" height="22" aria-hidden="true">
               <use xlink:href="#fb"></use>
             </svg>
           </a>
@@ -278,7 +286,7 @@
         </a>
 
         <a href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="footer__academy-logo" width="27" height="34" aria-hidden="true" class="">
+          <svg class="footer__academy-logo" width="27" height="34" aria-hidden="true">
             <use xlink:href="#academy"></use>
           </svg>
         </a>
