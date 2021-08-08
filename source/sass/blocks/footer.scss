@@ -135,12 +135,18 @@
     opacity: 0.3;
     fill: $basic-green;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .footer__academy-text {
   width: 100%;
   font-size: 16px;
   color: $special-dark-grey;
+
+  margin-right: 22px;
 }
 
 .footer__academy-logo {

@@ -41,7 +41,7 @@
 .contact__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
 
@@ -60,23 +60,26 @@
   font-size: 14px;
   line-height: 20px;
   font-style: normal;
-  text-align: right;
+  text-align: left;
+  margin-left: 50px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 20px;
+    text-align: left;
 
     padding-left: 0;
   }
 }
 
 .contact__sity {
-  display: inline-block;
+  display: block;
   padding-top: 15px;
 }
 

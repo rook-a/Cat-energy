@@ -9,6 +9,26 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 54px;
+
+    &--main {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+
+      .nav__wrapper {
+        background-color: transparent;
+      }
+
+      .nav__link {
+        color: $basic-white;
+      }
+
+      .current {
+        border-bottom: 2px solid $basic-white;
+      }
+    }
   }
 }
 

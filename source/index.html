@@ -50,7 +50,7 @@
 
     </svg>
 
-    <header class="header">
+    <header class="header header--main">
 
       <div class="container header__grid">
 
@@ -63,7 +63,7 @@
           </svg>
         </a>
 
-        <nav class="nav">
+        <nav class="nav nav--close nav--nojs">
           <button class="nav__button" type="button" aria-label="Открыть меню">
             <span class="nav__button-middle"></span>
           </button>
@@ -90,7 +90,10 @@
 
       <section class="lead">
         <div class="container">
-          <h2 class="lead__title title">Функциональное питание&nbsp;для&nbsp;котов</h2>
+          <h2 class="lead__title title">
+            Функциональное <br>
+            питание&nbsp;для&nbsp;котов
+          </h2>
           <p class="lead__text">Занялся собой? Займись котом!</p>
 
           <img class="lead__img" src="img/index-can-mobile.png" width="280" height="270" alt="Баночка полезного корма Кэт Энерджи, со вкусом курицы.">
@@ -185,17 +188,27 @@
           <div class="sample__slider">
 
             <div class="sample__img">
-              <img class="sample__img--before" src="img/model/before.png" width="677" height="520" alt="Изображение котика до начала курса питания от Кэт энерджи">
-              <img class="sample__img--after" src="img/model/after.png" width="545" height="520" alt="Изображение котика после курса питания от Кэт энерджи">
+              <img
+                class="sample__img--before sample__img--active"
+                width="677"
+                height="520"
+                src="img/model/before.png"
+                alt="Изображение котика до начала курса питания от Кэт энерджи">
+              <img
+                class="sample__img--after"
+                width="545"
+                height="520"
+                src="img/model/after.png"
+                alt="Изображение котика после курса питания от Кэт энерджи">
             </div>
 
             <div class="sample__buttons">
-              <button class="sample__btn" type="button">было</button>
+              <button class="sample__btn" type="button" id="btnPrev">было</button>
 
               <label for="range"></label>
               <input type="range" name="range-sliger" id="range" min="1" max="100" step="any">
 
-              <button class="sample__btn" type="button">стало</button>
+              <button class="sample__btn" type="button" id="btnNext">стало</button>
             </div>
 
           </div> <!-- /sample__slider -->
@@ -206,10 +219,14 @@
         <div class="container">
 
           <div class="contact__info">
-            <h2 class="contact__title">приглашаем к сотрудничеству дилеров!</h2>
+            <h2 class="contact__title">
+              приглашаем <br>
+              к&nbsp;сотрудничеству <br>
+              дилеров!
+            </h2>
 
             <address class="contact__address">
-              ул.&nbsp;Большая
+              ул.&nbsp;Большая <br>
               Конюшенная,&nbsp;д.&nbsp;19/8
                 <span class="contact__sity">Санкт-Петербург</span>
             </address>
@@ -273,6 +290,9 @@
       </div> <!-- /container -->
 
     </footer>
+
+    <script src="js/burger.js"></script>
+    <script src="js/slider.js"></script>
 
   </body>
 </html>
