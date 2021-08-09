@@ -188,25 +188,30 @@
           <div class="sample__slider">
 
             <div class="sample__img">
-              <img
-                class="sample__img--before sample__img--active"
-                width="677"
-                height="520"
-                src="img/model/before.png"
-                alt="Изображение котика до начала курса питания от Кэт энерджи">
-              <img
-                class="sample__img--after"
-                width="545"
-                height="520"
-                src="img/model/after.png"
-                alt="Изображение котика после курса питания от Кэт энерджи">
+              <div class="sample__img--before sample__img--active">
+                <img
+                  width="677"
+                  height="520"
+                  src="img/model/before.png"
+                  alt="Изображение котика до начала курса питания от Кэт энерджи">
+              </div>
+
+              <div class="sample__img--after">
+                <img
+                  width="545"
+                  height="520"
+                  src="img/model/after.png"
+                  alt="Изображение котика после курса питания от Кэт энерджи">
+              </div>
+
             </div>
 
             <div class="sample__buttons">
               <button class="sample__btn" type="button" id="btnPrev">было</button>
 
-              <label for="range"></label>
-              <input type="range" name="range-sliger" id="range" min="1" max="100" step="any">
+              <div class="slider__range">
+                <div class="slider__gragger" draggable="false" tabindex="0"></div>
+              </div>
 
               <button class="sample__btn" type="button" id="btnNext">стало</button>
             </div>

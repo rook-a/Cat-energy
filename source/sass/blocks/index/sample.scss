@@ -216,9 +216,14 @@
   flex-direction: column;
   justify-content: center;
 
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-rows: min-content 2fr;
+
+    width: 100%;
+    height: 520px;
 
     text-align: center;
     padding-bottom: 70px;
@@ -234,7 +239,15 @@
 
 .sample__img--before,
 .sample__img--after {
-  display: none;
+  overflow: hidden;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 100%;
+  }
 }
 
 .sample__img {
@@ -242,30 +255,65 @@
   align-items: center;
   justify-content: center;
 
-  height: 520px;
-  width: auto;
+  height: 300px;
 
+  overflow: hidden;
 
-  &--active {
-    display: block;
+  @media (max-width: $mobile-width) {
+    &--active {
+      display: block;
+    }
   }
 
   @media (min-width: $tablet-width) {
     grid-row: 1 / 2;
 
+    position: relative;
+
+    height: 520px;
+    width: 680px;
+
     margin: -150px 0 50px 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 680px;
     grid-row: 1 / 2;
 
     margin: -230px 0 50px 0;
   }
 }
 
+.sample__img--before img,
+.sample__img--after img {
+  display: block;
+  pointer-events: none;
+
+  // @media (max-width: $mobile-width) {
+
+  // }
+
+  @media (min-width: $tablet-width) {
+    max-width: none;
+    height: 520px;
+  }
+}
+
+.sample__img--before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 50%;
+
+    z-index: 1;
+  }
+}
+
 .sample__buttons {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     grid-row: 2 / -1;
@@ -283,4 +331,49 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    cursor: default;
+  }
+}
+
+.slider__range {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 6px;
+
+    border-radius: 6px;
+    background-color: $range;
+  }
+}
+
+.slider__gragger {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+
+    background-color: $basic-green;
+    border: 13px solid $basic-white;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px $range-shadow;
+
+    cursor: grab;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 2px 4px $range-shadow-hover;
+    }
+
+    &:active {
+      box-shadow:
+        0 0 0 1px $basic-green,
+        0 3px 5px $range-shadow-active;
+      cursor: grabbing;
+    }
+  }
 }
