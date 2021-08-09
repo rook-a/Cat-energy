@@ -28,31 +28,31 @@ let drag = false;
 const draggerWidth = range.getBoundingClientRect().width;
 
 const clipboxDimensions = {
-	width: clipbox.getBoundingClientRect().width,
-	left: clipbox.getBoundingClientRect().left
+  width: clipbox.getBoundingClientRect().width,
+  left: clipbox.getBoundingClientRect().left
 };
 
 const handleStartDrag = () => {
-	drag = true;
-	// dragger.classList.add("slider__gragger--active");
-	range.style.pointerEvents = "none";
+  drag = true;
+  // dragger.classList.add("slider__gragger--active");
+  range.style.pointerEvents = "none";
 };
 
 const handleStopDrag = () => {
-	drag = false;
-	range.style.pointerEvents = "auto";
-	// dragger.classList.remove("slider__gragger--active");
-	// clipbox.style.cursor = "auto";
+  drag = false;
+  range.style.pointerEvents = "auto";
+  // dragger.classList.remove("slider__gragger--active");
+  // clipbox.style.cursor = "auto";
 };
 
 const handleImgReveal = e => {
-	e.preventDefault();
-	e.offsetX = e.offsetX || e.targetTouches[0].pageX - clipboxDimensions.left;
-	if(drag && e.offsetX < clipboxDimensions.width && e.offsetX > 0) {
-		// clipbox.style.cursor = "grab";
-		range.style.left = e.offsetX - draggerWidth / 2 + "px";
-		first.style.width = e.offsetX + "px";
-	}
+  e.preventDefault();
+  e.offsetX = e.offsetX || e.targetTouches[0].pageX - clipboxDimensions.left;
+  if(drag && e.offsetX < clipboxDimensions.width && e.offsetX > 0) {
+    // clipbox.style.cursor = "grab";
+    range.style.left = e.offsetX - draggerWidth / 2 + "px";
+    first.style.width = e.offsetX + "px";
+  }
 };
 
 range.addEventListener("mousedown", handleStartDrag);
