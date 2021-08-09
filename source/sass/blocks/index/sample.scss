@@ -298,6 +298,13 @@
   }
 }
 
+.sample__img--after img {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 30px;
+  }
+}
+
 .sample__img--before {
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -310,10 +317,21 @@
   }
 }
 
+.sample__img--after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 20px;
+    width: 320px;
+    align-self: end;
+  }
+}
+
 .sample__buttons {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  position: relative;
 
   @media (min-width: $tablet-width) {
     grid-row: 2 / -1;
@@ -332,18 +350,53 @@
   border: none;
   cursor: pointer;
 
+  @media (max-width: $mobile-width) {
+    &--prev::after {
+      content: "";
+      position: absolute;
+      top: 35%;
+      left: 37%;
+
+      width: 38px;
+      height: 6px;
+
+      background-color: $basic-green;
+      border-radius: 6px;
+    }
+
+    &--next::before {
+      content: "";
+      position: absolute;
+      top: 35%;
+      left: 49.5%;
+
+      width: 38px;
+      height: 6px;
+
+      background-color: $basic-green;
+      border-radius: 6px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     cursor: default;
   }
 }
 
 .slider__range {
+  width: 84px;
+  height: 12px;
+  background-color: $basic-white;
+
+  border: 1px solid $more-border;
+  border-radius: 6px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 100%;
+    width: 90%;
     height: 6px;
 
     border-radius: 6px;
@@ -351,7 +404,7 @@
   }
 }
 
-.slider__gragger {
+.slider__dragger {
   @media (min-width: $tablet-width) {
     position: absolute;
     width: 8px;

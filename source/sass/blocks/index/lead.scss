@@ -1,6 +1,7 @@
 .lead {
-  background-image: linear-gradient(to top, $basic-white 0%, $basic-white 50%, transparent 50%),
-    url("../../../img/cat-bg.jpg");
+  background-image:
+    url("../../../img/cat-bg.jpg"),
+    linear-gradient(to top, $basic-white 0%, $basic-white 50%, transparent 50%);
   background-repeat: no-repeat;
   background-size: 100%;
 
@@ -23,9 +24,12 @@
     position: relative;
     height: 500px;
 
-    background-image: linear-gradient(to right, $basic-white 0%, $basic-white 50%, transparent 50%), url("../../../img/cat-bg-desktop.jpg");
+    background-image:
+      url("../../../img/cat-bg-desktop.jpg"),
+      linear-gradient(to right, $basic-white 0%, $basic-white 50%, $bg-dark-green 50%);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain, 100%;
+    background-position: right;
 
     padding-top: 300px;
     margin-bottom: 82px;
