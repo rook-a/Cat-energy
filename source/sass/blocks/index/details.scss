@@ -1,6 +1,12 @@
 .details {
+  margin-bottom: 46px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-bottom: 13%;
+    margin-bottom: 300px;
   }
 }
 
@@ -9,7 +15,7 @@
 // }
 
 .details__list {
-  margin: 0 0 42px 0;
+  margin: 0;
   padding: 0;
 
 

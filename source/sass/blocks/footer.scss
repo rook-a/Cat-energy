@@ -67,6 +67,10 @@
   padding: 20px 0 20px 0;
   margin: 0 0 22px 0;
 
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0;
@@ -135,12 +139,18 @@
     opacity: 0.3;
     fill: $basic-green;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .footer__academy-text {
   width: 100%;
   font-size: 16px;
   color: $special-dark-grey;
+
+  margin-right: 22px;
 }
 
 .footer__academy-logo {
