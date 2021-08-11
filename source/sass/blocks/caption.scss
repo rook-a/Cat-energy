@@ -9,10 +9,15 @@
   padding: 0 23px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 38px;
+    font-size: 36px;
+    line-height: 36px;
+
+    padding: 0 38px 0 31px;
+    margin-left: 38px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 40px;
+    margin-left: 70px;
   }
 }

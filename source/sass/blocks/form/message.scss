@@ -11,12 +11,23 @@
   @include input-font;
 
   min-width: 280px;
+  box-sizing: border-box;
+
   border-color: $input;
+  outline: none;
 
   padding: 10px 13px 0 13px;
 
   &::placeholder {
     text-align: center;
+  }
+
+  &:hover {
+    border-color: $more-border;
+  }
+
+  &:focus {
+    border-color: $basic-text;
   }
 
   @media (min-width: $tablet-width) {
@@ -27,8 +38,8 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
+  @media (min-width: $desktop-width) {
+    width: 97%;
 
     &::placeholder {
       text-align: left;

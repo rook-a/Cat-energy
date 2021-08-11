@@ -6,4 +6,13 @@
   text-transform: none;
 
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  // @media (min-width: $desktop-width) {
+
+  // }
 }
