@@ -54,6 +54,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    grid-template-rows: repeat(2, 1fr min-content);
+
     padding: 25px; // 38px
 
     background-color: $basic-grey;
@@ -91,7 +93,7 @@
 
   &--subtitle {
     @media (min-width: $tablet-width) {
-      grid-column: 1 / 2;
+      grid-column: 1 / -1;
       grid-row: 2 / 3;
     }
 
@@ -185,6 +187,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+
     & dd,
     & dt {
       border-bottom: 1px solid $more-border;
@@ -239,6 +244,11 @@
 .catalog__btn {
   grid-column: 1 / -1;
   grid-row: 3 / -1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 4 / -1;
+  }
 
   @media (min-width: $desktop-width) {
     grid-row: 4 / -1;

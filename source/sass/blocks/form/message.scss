@@ -8,14 +8,17 @@
 }
 
 .message__text {
+  display: block;
+
   @include input-font;
 
-  min-width: 280px;
+  width: calc(100% - 2 * 20px);
   box-sizing: border-box;
 
   border-color: $input;
   outline: none;
 
+  margin: 0 auto;
   padding: 10px 13px 0 13px;
 
   &::placeholder {
@@ -31,7 +34,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 90%;
+    width: calc(100% - 2 * 69px);
 
     &::placeholder {
       text-align: left;
@@ -39,7 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 97%;
+    width: calc(100% - 2 * 110px);
 
     &::placeholder {
       text-align: left;
