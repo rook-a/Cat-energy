@@ -55,9 +55,16 @@
       <div class="container header__grid">
 
         <a class="logo" href="#">
-          <svg class="logo__icon" width="34" height="38" aria-hidden="true">
+          <!-- поправить после следующего лайва! -->
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+
+            <img class="logo__icon" src="img/logo/logo-mobile.svg" width="101" height="18" alt="">
+          </picture>
+          <!-- <svg class="logo__icon" width="34" height="38" aria-hidden="true">
             <use xlink:href="#logo"></use>
-          </svg>
+          </svg> -->
           <svg class="logo__text" width="101" height="18" aria-hidden="true">
             <use xlink:href="#name"></use>
           </svg>
@@ -96,7 +103,48 @@
           </h2>
           <p class="lead__text">Занялся собой? Займись котом!</p>
 
-          <img class="lead__img" src="img/index-can-mobile.png" width="280" height="270" alt="Баночка полезного корма Кэт Энерджи, со вкусом курицы.">
+          <picture>
+            <source media="(min-width: 1440px)"
+                    srcset="img/index-can.avif 1x,
+                            img/index-can@2x.avif 2x"
+                    type="image/avif">
+            <source media="(min-width: 1440px)"
+                    srcset="img/index-can.webp 1x,
+                            img/index-can@2x.webp 2x"
+                    type="image/webp">
+            <source media="(min-width: 1440px)"
+                    srcset="img/index-can.png 1x,
+                            img/index-can@2x.png 2x"
+                    type="image/png">
+
+            <source media="(min-width: 768px)"
+                    srcset="img/index-can-tablet.avif 1x,
+                            img/index-can-tablet@2x.avif 2x"
+                    type="image/avif">
+            <source media="(min-width: 768px)"
+                    srcset="img/index-can-tablet.webp 1x,
+                            img/index-can-tablet@2x.webp 2x"
+                    type="image/webp">
+            <source media="(min-width: 768px)"
+                    srcset="img/index-can-tablet.png 1x,
+                            img/index-can-tablet@2x.png 2x"
+                    type="image/png">
+
+            <source srcset="img/index-can-mobile.avif 1x,
+                            img/index-can-mobile@2x.avif 2x"
+                    type="image/avif">
+            <source srcset="img/index-can-mobile.webp 1x,
+                            img/index-can-mobile@2x.webp 2x"
+                    type="image/webp">
+
+            <img
+              class="lead__img"
+              src="img/index-can-mobile.png"
+              srcset="img/index-can-mobile@2x.png"
+              width="280"
+              height="270"
+              alt="Баночка полезного корма Кэт Энерджи, со вкусом курицы.">
+          </picture>
 
           <a class="lead__btn button" href="form.html">подобрать программу</a>
 
@@ -188,19 +236,41 @@
 
           <div class="sample__img">
             <div class="sample__img--before sample__img--active">
-              <img
-                width="677"
-                height="520"
-                src="img/model/before.png"
-                alt="Изображение котика до начала курса питания от Кэт энерджи">
+              <picture>
+                <source srcset="img/model/before.avif 1x,
+                                img/model/before@2x.avif 2x"
+                        type="image/avif">
+
+                <source srcset="img/model/before.webp 1x,
+                                img/model/before@2x.webp 2x"
+                        type="image/webp">
+
+                <img
+                  width="677"
+                  height="520"
+                  src="img/model/before.png"
+                  srcset="img/model/before@2x.png 2x"
+                  alt="Изображение котика до начала курса питания от Кэт энерджи">
+              </picture>
             </div>
 
             <div class="sample__img--after">
-              <img
-                width="545"
-                height="520"
-                src="img/model/after.png"
-                alt="Изображение котика после курса питания от Кэт энерджи">
+              <picture>
+                <source srcset="img/model/after.avif 1x,
+                                img/model/after@2x.avif 2x"
+                        type="image/avif">
+
+                <source srcset="img/model/after.webp 1x,
+                                img/model/after@2x.webp 2x"
+                        type="image/webp">
+
+                <img
+                  width="545"
+                  height="520"
+                  src="img/model/after.png"
+                  srcset="img/model/after@2x.png 2x"
+                  alt="Изображение котика после курса питания от Кэт энерджи">
+              </picture>
             </div>
 
           </div>

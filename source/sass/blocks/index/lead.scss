@@ -1,6 +1,6 @@
 .lead {
   background-image:
-    url("../../../img/cat-bg.jpg"),
+    url("../../../img/cat-bg/cat-bg-mobile.jpg"),
     linear-gradient(to top, $basic-white 0%, $basic-white 50%, transparent 50%);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -12,6 +12,10 @@
   text-align: center;
   padding: 25px 0 0 0;
   margin: 0 0 22px 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../img/cat-bg/cat-bg-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -25,7 +29,7 @@
     height: 500px;
 
     background-image:
-      url("../../../img/cat-bg-desktop.jpg"),
+      url("../../../img/cat-bg/cat-bg-desktop.jpg"),
       linear-gradient(to right, $basic-white 0%, $basic-white 50%, $bg-dark-green 50%);
     background-repeat: no-repeat;
     background-size: contain, 100%;
@@ -33,6 +37,10 @@
 
     padding-top: 300px;
     margin-bottom: 82px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/cat-bg/cat-bg-desktop@2x.jpg");
+    }
   }
 }
 
