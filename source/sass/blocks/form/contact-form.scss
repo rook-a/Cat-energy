@@ -1,9 +1,10 @@
 .contact-form {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
 
   padding: 0;
-  margin: 0 0 24px 0;
+  margin: 0 0 25px 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
@@ -11,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+
     margin-bottom: 69px;
   }
 }
@@ -21,25 +23,160 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
   }
+}
+
+.contact-form__grid {
+  position: relative;
+
+  margin: 0;
+  padding: 0 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px 0 69px;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
+    padding: 0 0 0 110px;
+
+    &:last-child {
+      margin-left: 50px;
+      padding: 0 110px 0 0;
+    }
+  }
+}
+
+.contact-form__label {
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  // @media (min-width: $desktop-width) {
+
+  // }
+}
+
+.contact-form__input {
+  @include input-font;
+  @include input-size;
+
+  outline: none;
+  margin-bottom: 13px;
+
+  &:hover {
+    border-color: $more-border;
+  }
+
+  &:focus {
+    border-color: $basic-text;
+  }
+
+  &:invalid {
+    border-color: $error;
+  }
+
+  &:focus + .contact-form__icon-email {
+    stroke: $basic-green;
+  }
+
+  &:invalid + .contact-form__icon-email {
+    stroke: $error;
+  }
+
+  &:focus + .contact-form__icon-phone {
+    fill: $basic-green;
+  }
+
+  &:invalid + .contact-form__icon-phone {
+    fill: $error;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
   }
 }
 
 .contact-form__mail {
+  width: 197px;
+
+  margin-left: 11px;
+
+  @media (min-width: $tablet-width) {
+    width: 531px;
+
+    margin-left: 18px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-right: 50px;
+    width: 468px;
+
+    margin: 0 0 0 20px;
   }
 }
 
-.contact-form__mail,
 .contact-form__phone {
-  @include input-font;
-  @include input-size;
+  width: 183px;
+
+  margin-left: 8px;
+
+  @media (min-width: $tablet-width) {
+    width: 514px;
+
+    margin-left: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 472px;
+
+    margin-left: 15px;
+  }
 }
 
-// .contact-form__email-title,
-// .contact-form__phone-title {
+.contact-form__icon-email {
+  position: absolute;
+  content: "";
 
-// }
+  top: 25%;
+  right: 9%;
+
+  width: 20px;
+  height: 15px;
+
+  fill: none;
+  stroke: $subtitle;
+
+  @media (min-width: $tablet-width) {
+    right: 11%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 30%;
+    right: 3%;
+  }
+}
+
+.contact-form__icon-phone {
+  position: absolute;
+  content: "";
+
+  top: 20%;
+  right: 9%;
+
+  width: 20px;
+  height: 21px;
+
+  @media (min-width: $tablet-width) {
+    top: 25%;
+    right: 11%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 22%;
+    right: 18%;
+  }
+}

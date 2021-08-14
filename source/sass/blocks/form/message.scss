@@ -8,27 +8,41 @@
 }
 
 .message__text {
+  display: block;
+
   @include input-font;
 
-  min-width: 280px;
-  border-color: $input;
+  width: calc(100% - 2 * 20px);
+  box-sizing: border-box;
 
+  border-color: $input;
+  outline: none;
+
+  margin: 0 auto;
   padding: 10px 13px 0 13px;
 
   &::placeholder {
     text-align: center;
   }
 
+  &:hover {
+    border-color: $more-border;
+  }
+
+  &:focus {
+    border-color: $basic-text;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 90%;
+    width: calc(100% - 2 * 69px);
 
     &::placeholder {
       text-align: left;
     }
   }
 
-  @media (min-width: $tablet-width) {
-    width: 100%;
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 2 * 110px);
 
     &::placeholder {
       text-align: left;

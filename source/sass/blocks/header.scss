@@ -1,7 +1,7 @@
 .header {
   position: relative;
   text-align: center;
-  padding-top: 10px;
+  padding: 10px 0 20px 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 27px;

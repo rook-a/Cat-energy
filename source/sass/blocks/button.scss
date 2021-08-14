@@ -25,4 +25,8 @@
   &:active {
     color: $btn-active;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 168px;
+  }
 }
