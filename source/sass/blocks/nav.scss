@@ -39,7 +39,7 @@
       right: 0;
 
       .nav__button {
-        top: -20%;
+        top: -27%;
       }
 
       .nav__button::before {
@@ -135,6 +135,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 
     justify-content: flex-end;
