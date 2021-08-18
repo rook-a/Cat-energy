@@ -1,7 +1,6 @@
 const clipbox = document.querySelector('.sample__slider');
 const range   = document.querySelector('.slider__range');
 const dragger = document.querySelector('.slider__dragger');
-const first   = document.querySelector('.sample__img--before');
 // onClick
 const imgBefore = document.querySelector('.sample__img--before');
 const imgAfter  = document.querySelector('.sample__img--after');
@@ -29,7 +28,7 @@ btnNext.addEventListener('click', function() {
   btnNext.classList.add('sample__btn--next');
 });
 
-//
+//---------------------------------
 let drag = false;
 
 const draggerWidth = range.getBoundingClientRect().width;
@@ -58,7 +57,7 @@ const handleImgReveal = e => {
   if(drag && e.offsetX < clipboxDimensions.width && e.offsetX > 0) {
     // clipbox.style.cursor = 'grab';
     range.style.left = e.offsetX - draggerWidth / 2 + 'px';
-    first.style.width = e.offsetX + 'px';
+    imgBefore.style.width = e.offsetX + 'px';
     dragger.style.left = e.offsetX + (draggerWidth / 100 - 17) + 'px';
   }
 };

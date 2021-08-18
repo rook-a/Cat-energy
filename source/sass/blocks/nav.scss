@@ -7,16 +7,6 @@
 
   color: $basic-black;
 
-  &--nojs {
-    .nav__wrapper {
-      display: block;
-    }
-
-    .nav__button {
-      display: none;
-    }
-  }
-
   @media (max-width: $mobile-width) {
     font-weight: 500;
 
@@ -51,6 +41,16 @@
       }
 
       .nav__button-middle {
+        display: none;
+      }
+    }
+
+    &--nojs {
+      .nav__wrapper {
+        display: block;
+      }
+
+      .nav__button {
         display: none;
       }
     }

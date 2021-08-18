@@ -19,7 +19,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 80px;
+    gap: 80px;
   }
 }
 
@@ -43,8 +43,8 @@
   }
 
   &::before {
-    top: 11%;
-    left: 5%;
+    top: 25px;
+    left: 20px;
 
     width: 50px;
     height: 50px;
@@ -54,8 +54,8 @@
   }
 
   &:nth-child(1)::after {
-    top: 11%;
-    left: 6%;
+    top: 23px;
+    left: 27px;
 
     width: 37px;
     height: 50px;
@@ -66,8 +66,8 @@
   }
 
   &:nth-child(2)::after {
-    top: 15%;
-    left: 3%;
+    top: 35px;
+    left: 10px;
 
     width: 67px;
     height: 28px;
@@ -86,24 +86,27 @@
     }
 
     &::before {
-      top: 25%;
-      left: 65%;
+      top: 90px;
+      left: auto;
+      right: 50px;
 
       width: 200px;
       height: 200px;
     }
 
     &:nth-child(1)::after {
-      top: 23%;
-      left: 69%;
+      top: 80px;
+      right: 70px;
+      left: auto;
 
       width: 141px;
       height: 194px;
     }
 
     &:nth-child(2)::after {
-      top: 37%;
-      left: 60%;
+      top: 135px; // ???
+      right: 20px;
+      left: auto;
 
       width: 269px;
       height: 113px;
@@ -115,24 +118,24 @@
     margin-bottom: 0;
 
     &::before {
-      top: 10%;
-      left: 10%;
+      top: 40px;
+      left: 55px;
 
       width: 100px;
       height: 100px;
     }
 
     &:nth-child(1)::after {
-      top: 10%;
-      left: 12%;
+      top: 40px;
+      left: 75px;
 
       width: 71px;
       height: 97px;
     }
 
     &:nth-child(2)::after {
-      top: 15%;
-      left: 7%;
+      top: 60px;
+      left: 35px;
 
       width: 135px;
       height: 57px;
