@@ -58,6 +58,7 @@ const handleImgReveal = e => {
     // clipbox.style.cursor = 'grab';
     range.style.left = e.offsetX - draggerWidth / 2 + 'px';
     imgBefore.style.width = e.offsetX + 'px';
+    // imgAfter.style.width = e.offsetX + 'px';
     dragger.style.left = e.offsetX + (draggerWidth / 100 - 17) + 'px';
   }
 };

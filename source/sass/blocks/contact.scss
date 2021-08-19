@@ -23,6 +23,8 @@
 
   @media (min-width: $tablet-width) {
     height: 200px;
+
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,10 +88,7 @@
   padding-top: 15px;
 }
 
-// .contact__map {
-
-// }
-
-.contact__frame {
+.contact__map {
+  height: 500px;
   width: 100%;
 }
