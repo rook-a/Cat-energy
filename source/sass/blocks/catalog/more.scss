@@ -140,6 +140,7 @@
 
 .more__amount {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   line-height: 20px;
@@ -156,6 +157,12 @@
 .more__price {
   @media (min-width: $tablet-width) {
     margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 20%;
+
+    margin-left: 0;
   }
 }
 
