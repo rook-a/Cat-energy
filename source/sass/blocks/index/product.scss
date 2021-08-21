@@ -43,8 +43,8 @@
   }
 
   &::before {
-    top: 25px;
-    left: 20px;
+    top: 22px;
+    left: 22px;
 
     width: 50px;
     height: 50px;
@@ -54,8 +54,8 @@
   }
 
   &:nth-child(1)::after {
-    top: 23px;
-    left: 27px;
+    top: 19px;
+    left: 28px;
 
     width: 37px;
     height: 50px;
@@ -66,8 +66,8 @@
   }
 
   &:nth-child(2)::after {
-    top: 35px;
-    left: 10px;
+    top: 34px;
+    left: 13px;
 
     width: 67px;
     height: 28px;
@@ -78,7 +78,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 50% 57px 53px;
+    padding: 77px 44% 64px 53px;
     margin-bottom: 30px;
 
     &:last-child {
@@ -86,9 +86,9 @@
     }
 
     &::before {
-      top: 90px;
+      top: 91px;
       left: auto;
-      right: 50px;
+      right: 61px;
 
       width: 200px;
       height: 200px;
@@ -96,7 +96,7 @@
 
     &:nth-child(1)::after {
       top: 80px;
-      right: 70px;
+      right: 92px;
       left: auto;
 
       width: 141px;
@@ -104,8 +104,8 @@
     }
 
     &:nth-child(2)::after {
-      top: 135px; // ???
-      right: 20px;
+      top: 135px;
+      right: 28px;
       left: auto;
 
       width: 269px;
@@ -114,28 +114,28 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 50px;
+    padding: 50px 50px 65px 50px;
     margin-bottom: 0;
 
     &::before {
-      top: 40px;
-      left: 55px;
+      top: 47px;
+      left: 51px;
 
       width: 100px;
       height: 100px;
     }
 
     &:nth-child(1)::after {
-      top: 40px;
-      left: 75px;
+      top: 42px;
+      left: 66px;
 
       width: 71px;
       height: 97px;
     }
 
     &:nth-child(2)::after {
-      top: 60px;
-      left: 35px;
+      top: 68px;
+      left: 32px;
 
       width: 135px;
       height: 57px;
@@ -153,12 +153,13 @@
   color: $basic-black;
 
   margin: 0 0 29px 0;
-  padding-left: 70px;
+  padding-left: 71px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
 
+    margin: 0 0 25px 0;
     padding-left: 0;
   }
 
@@ -167,7 +168,7 @@
     line-height: 36px;
 
     padding-left: 162px;
-    margin: 20px 0 53px 0;
+    margin: 27px 0 73px 2px;
   }
 }
 
@@ -180,7 +181,7 @@
 
   color: $special-dark-grey;
 
-  margin: 0 0 20px 0;
+  margin: 0 0 18px 0;
   padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
@@ -188,6 +189,8 @@
     line-height: 24px;
 
     border-bottom: none;
+
+    margin: 0 0 34px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -195,6 +198,8 @@
     line-height: 24px;
 
     border-bottom: none;
+
+    margin: 0 0 13px 0;
   }
 }
 
@@ -212,7 +217,7 @@
 
   background-image: url("../../../img/catalog/icon/arrow.svg");
   background-repeat: no-repeat;
-  background-position: 125px 2px;
+  background-position: 100px 0;
 
   &:hover,
   &:focus {
@@ -226,11 +231,13 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: auto;
+
+    background-position: 131px 2px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     font-size: 20px;
-    line-height: auto;
+
+    background-position: 135px 2px;
   }
 }

@@ -33,10 +33,7 @@
   display: block;
   margin: 0 auto;
 
-  width: 128px;
-  height: 24px;
-
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   &:hover,
   &:focus {
@@ -47,8 +44,20 @@
     opacity: 0.6;
   }
 
+  @media (max-width: $mobile-width) {
+    .footer__logo-text {
+      width: 128px;
+      height: 24px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
+
+    .footer__logo-text {
+      width: 128px;
+      height: 24px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -64,8 +73,8 @@
   border-top: 1px solid $product-border;
   border-bottom: 1px solid $product-border;
 
-  padding: 20px 0 20px 0;
-  margin: 0 0 22px 0;
+  padding: 20px 0 17px 0;
+  margin: 0 0 15px 0;
 
   @media (max-width: $mobile-width) {
     width: 100%;
@@ -73,22 +82,26 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 30px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 33px;
     border: none;
   }
 }
 
 .footer__item {
-  margin-right: 30px;
+  margin-right: 33px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 30px;
   }
 }
 
@@ -115,12 +128,46 @@
   }
 }
 
+.footer__vk {
+  @media (max-width: $mobile-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.footer__instagram {
+  @media (max-width: $mobile-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
 .footer__fb {
   fill: none;
   stroke: $logo-academy;
 
   &:hover {
     stroke: $basic-green;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
   }
 }
 
@@ -154,5 +201,8 @@
 }
 
 .footer__academy-logo {
+  width: 27px;
+  height: 34px;
+
   fill: $logo-academy;
 }

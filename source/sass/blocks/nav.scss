@@ -16,7 +16,9 @@
       }
 
       .nav__button {
-        top: 30%;
+        top: 32%;
+        left: auto;
+        right: 6%;
       }
     }
 
@@ -29,7 +31,9 @@
       right: 0;
 
       .nav__button {
-        top: -27%;
+        top: -22%;
+        left: auto;
+        right: 6%;
       }
 
       .nav__button::before {
@@ -100,11 +104,11 @@
   }
 
   &::before {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
   }
 
   &::after {
-    transform: translateY(4px);
+    transform: translateY(6px);
   }
 
   @media (min-width: $tablet-width) {
@@ -179,7 +183,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 10px;
+    padding: 10px 0 10px 0;
   }
 }
 
@@ -188,5 +192,9 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $basic-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 6px;
   }
 }

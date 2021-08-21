@@ -4,11 +4,13 @@
 
   height: 50px;
 
+  margin-bottom: 3px;
+
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
 
-    height: 100px;
+    height: 85px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,16 +21,20 @@
 .logo__icon {
   width: 34px;
   height: 38px;
-  margin-right: 57px;
+  margin: 0 57px 7px 0;
 
   @media (min-width: $tablet-width) {
     width: 61px;
     height: 50px;
+
+    margin: 0 11px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 71px;
     height: 60px;
+
+    margin: 0 17px 0 0;
   }
 }
 
