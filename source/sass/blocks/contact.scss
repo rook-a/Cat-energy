@@ -25,6 +25,22 @@
     padding: 0 41px;
 
     z-index: 1;
+
+    &--catalog {
+      height: 135px;
+
+      padding-top: 37px;
+      margin-bottom: 28px;
+
+      .contact__title {
+        padding-bottom: 5px;
+      }
+
+      .contact__address {
+        margin-left: 244px;
+        padding: 0;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +56,15 @@
     background-color: $basic-white;
 
     padding: 53px 36px;
+
+    &--catalog {
+      padding-top: 60px;
+      margin-bottom: 0;
+      .contact__address {
+        padding: 0 45px 0 0;
+        margin-left: 22px;
+      }
+    }
   }
 }
 
@@ -56,7 +81,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 22px;
 
     padding-bottom: 20px;
   }
