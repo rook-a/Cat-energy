@@ -7,7 +7,7 @@
     <link rel="icon" href="source/img/favicon/152.png" type="image/svg+xml">
     <link rel="apple-touch-icon" href="source/img/favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -20,13 +20,10 @@
             <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
 
-            <img class="logo__icon" src="img/logo/logo-mobile.svg" width="101" height="18" alt="">
+            <img class="logo__icon" src="img/logo/logo-mobile.svg" width="101" height="18" alt="Изображение логотипа Кэт энерджи">
           </picture>
-          <!-- <svg class="logo__icon" width="34" height="38" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#logo"></use>
-          </svg> -->
           <svg class="logo__text" width="101" height="18" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#name"></use>
+            <use xlink:href="img/sprite.svg#logo-text"></use>
           </svg>
         </a>
 
@@ -159,7 +156,7 @@
                 функциональное питание.</p>
             </li>
             <li class="details__item">
-              <p class="details__text">Уже&nbsp;через&nbsp;месяц наслаждайтесь изменениями&nbsp;к&nbsp;лучшему вашего&nbsp;питомца!</p>
+              <p class="details__text">Уже&nbsp;через&nbsp;месяц&nbsp;наслаждайтесь изменениями к&nbsp;лучшему вашего&nbsp;питомца!</p>
             </li>
           </ul>
 
@@ -170,8 +167,8 @@
 
         <h2 class="sample__title heading">Живой пример</h2>
 
-        <p class="sample__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-
+        <p class="sample__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек&nbsp;и по&#8209;прежнему&nbsp;спит по 16 часов в день.</p>
+        <!-- &#8209; — неразрывной пробел -->
         <div class="sample__list">
           <div class="sample__wrapper">
             <dl class="sample__item">
@@ -267,7 +264,9 @@
           </div>
         </div> <!-- /container -->
 
-        <div class="contact__map"></div>
+        <div class="contact__map">
+          <iframe class="contact__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1569057868496!2d30.32173938014065!3d59.93913683706914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627054705509!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
       </section>
 
     </main>
@@ -275,8 +274,8 @@
     <footer class="footer">
       <div class="container footer--grid">
         <a class="footer__logo" href="#">
-          <svg width="128" height="24" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#name"></use>
+          <svg class="footer__logo-text" width="128" height="24" aria-hidden="true">
+            <use xlink:href="img/sprite.svg#logo-text"></use>
           </svg>
         </a>
 
@@ -284,14 +283,14 @@
 
           <li class="footer__item">
             <a class="footer__link" href="https://vk.com/">
-              <svg width="23" height="16" aria-hidden="true">
+              <svg class="footer__vk" width="23" height="16" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#vk"></use>
               </svg>
             </a>
           </li>
           <li class="footer__item">
             <a class="footer__link" href="https://www.instagram.com/">
-              <svg width="16" height="16" aria-hidden="true">
+              <svg class="footer__instagram" width="16" height="16" aria-hidden="true">
                 <use xlink:href="img/sprite.svg#instagram"></use>
               </svg>
             </a>
@@ -308,12 +307,12 @@
 
         <div class="footer__dev">
           <a class="footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">
-            HTML academy
+            HTML Academy
           </a>
 
           <a href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="footer__academy-logo" width="27" height="34" aria-hidden="true">
-              <use xlink:href="img/sprite.svg#academy"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
@@ -322,9 +321,10 @@
 
     </footer>
 
-    <script src="js/burger.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/map.js"></script>
+    <script src="js/script.min.js"> </script>
+    <!-- <script src="js/burger.min.js"></script>
+    <script src="js/slider.min.js"></script>
+    <script src="js/map.min.js"></script> -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5TDAMT60T9yPWMCcizWtWfqY5Hrf6Awc&callback=initMap"></script>
 
   </body>

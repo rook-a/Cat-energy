@@ -7,7 +7,7 @@
   <link rel="icon" href="source/img/favicon/152.png" type="image/svg+xml">
   <link rel="apple-touch-icon" href="source/img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
@@ -18,13 +18,10 @@
           <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
 
-          <img class="logo__icon" src="img/logo/logo-mobile.svg" width="101" height="18" alt="">
+          <img class="logo__icon" src="img/logo/logo-mobile.svg" width="101" height="18" alt="Изображение логотипа Кэт энерджи">
         </picture>
-        <!-- <svg class="logo__icon" width="34" height="38" aria-hidden="true">
-          <use xlink:href="img/sprite.svg#logo"></use>
-        </svg> -->
         <svg class="logo__text" aria-hidden="true">
-          <use xlink:href="img/sprite.svg#name"></use>
+          <use xlink:href="img/sprite.svg#logo-text"></use>
         </svg>
       </a>
 
@@ -121,9 +118,9 @@
           </fieldset>
         </div> <!-- /form__wrapper -->
 
-        <!-- <div class="container"> -->
-          <fieldset class="contact-form border">
-            <legend class="contact-form__title caption">Контактные данные (владельца кота)</legend>
+
+        <fieldset class="contact-form border">
+          <legend class="contact-form__title caption">Контактные данные (владельца кота)</legend>
 
             <p class="contact-form__grid">
               <label class="contact-form__label" for="email">E-mail:<sup>*</sup></label>
@@ -153,9 +150,9 @@
               </svg>
             </p>
 
-          </fieldset>
+        </fieldset>
 
-          <fieldset class="message border">
+        <fieldset class="message border">
             <legend class="meaasge__title caption">Комментарий</legend>
 
             <label for="message"></label>
@@ -166,59 +163,58 @@
               cols="30"
               rows="7"
               placeholder="Расскажите обо всех повадках кота"></textarea>
-          </fieldset>
+        </fieldset>
 
-          <fieldset class="checkbox border">
-            <legend class="checkbox__title caption">Дополнительно</legend>
+        <fieldset class="checkbox border">
+          <legend class="checkbox__title caption">Дополнительно</legend>
 
-            <ul class="checkbox__list">
-              <li class="checkbox__item">
-                <input
+          <ul class="checkbox__list">
+            <li class="checkbox__item">
+              <input
+              class="checkbox__input visually-hidden"
+              id="sweetener"
+              name="sweetener"
+              type="checkbox"
+              checked>
+              <label class="checkbox__label" for="sweetener">сахарозаменитель</label>
+            </li>
+
+            <li class="checkbox__item">
+              <input
                 class="checkbox__input visually-hidden"
-                id="sweetener"
-                name="sweetener"
-                type="checkbox"
-                checked>
-                <label class="checkbox__label" for="sweetener">сахарозаменитель</label>
-              </li>
+                id="water"
+                name="water"
+                type="checkbox">
+              <label class="checkbox__label" for="water">питьевая вода</label>
+            </li>
 
-              <li class="checkbox__item">
-                <input
-                  class="checkbox__input visually-hidden"
-                  id="water"
-                  name="water"
-                  type="checkbox">
-                <label class="checkbox__label" for="water">питьевая вода</label>
-              </li>
+            <li class="checkbox__item">
+              <input
+                class="checkbox__input visually-hidden"
+                id="milk"
+                name="milk"
+                type="checkbox">
+              <label class="checkbox__label" for="milk">молоко</label>
+            </li>
 
-              <li class="checkbox__item">
-                <input
-                  class="checkbox__input visually-hidden"
-                  id="milk"
-                  name="milk"
-                  type="checkbox">
-                <label class="checkbox__label" for="milk">молоко</label>
-              </li>
+            <li class="checkbox__item">
+              <input
+                class="checkbox__input visually-hidden"
+                id="vitamins"
+                name="vitamins"
+                type="checkbox">
+              <label class="checkbox__label" for="vitamins">витамины</label>
+            </li>
+          </ul>
 
-              <li class="checkbox__item">
-                <input
-                  class="checkbox__input visually-hidden"
-                  id="vitamins"
-                  name="vitamins"
-                  type="checkbox">
-                <label class="checkbox__label" for="vitamins">витамины</label>
-              </li>
-            </ul>
+        </fieldset>
 
-          </fieldset>
-
-          <div class="form__btn">
-            <button class="button" type="submit">отправить заявку</button>
-            <small class="form__text-small"><sup>*</sup> — Обязательные поля</small>
-          </div>
-        <!--</div> --><!-- /container -->
+        <div class="form__btn">
+          <button class="button" type="submit">отправить заявку</button>
+          <small class="form__text-small"><sup>*</sup> — Обязательные поля</small>
+        </div>
       </form>
-    </section>
+    </section> <!-- /pink -->
 
     <section class="contact">
       <div class="container">
@@ -235,7 +231,7 @@
       </div> <!-- /container -->
 
       <div class="contact__map">
-        <iframe class="contact__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1569057868496!2d30.32173938014065!3d59.93913683706914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627054705509!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="contact__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1569057868496!2d30.32173938014065!3d59.93913683706914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627054705509!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
 
     </section>
@@ -244,8 +240,8 @@
   <footer class="footer">
     <div class="container footer--grid">
       <a class="footer__logo" href="#">
-        <svg width="128" height="24" aria-hidden="true">
-          <use xlink:href="img/sprite.svg#name"></use>
+        <svg class="footer__logo-text" width="128" height="24" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#logo-text"></use>
         </svg>
       </a>
 
@@ -253,14 +249,14 @@
 
         <li class="footer__item">
           <a class="footer__link" href="https://vk.com/">
-            <svg width="23" height="16" aria-hidden="true">
+            <svg class="footer__vk" width="23" height="16" aria-hidden="true">
               <use xlink:href="img/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
         <li class="footer__item">
           <a class="footer__link" href="https://www.instagram.com/">
-            <svg width="16" height="16" aria-hidden="true">
+            <svg class="footer__instagram" width="16" height="16" aria-hidden="true">
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
           </a>
@@ -277,12 +273,12 @@
 
       <div class="footer__dev">
         <a class="footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML academy
+          HTML Academy
         </a>
 
         <a href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="footer__academy-logo" width="27" height="34" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#academy"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -290,8 +286,9 @@
 
   </footer>
 
-  <script src="js/burger.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/script.min.js"> </script>
+  <!-- <script src="js/burger.min.js"></script>
+  <script src="js/map.min.js"></script> -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5TDAMT60T9yPWMCcizWtWfqY5Hrf6Awc&callback=initMap"></script>
 
 </body>

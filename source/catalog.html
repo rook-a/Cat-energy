@@ -7,7 +7,7 @@
   <link rel="icon" href="source/img/favicon/152.png" type="image/svg+xml">
   <link rel="apple-touch-icon" href="source/img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
@@ -19,13 +19,10 @@
           <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
 
-          <img class="logo__icon" src="img/logo/logo-mobile.svg" width="101" height="18" alt="">
+          <img class="logo__icon" src="img/logo/logo-mobile.svg" width="101" height="18" alt="Изображение логотипа Кэт энерджи">
         </picture>
-        <!-- <svg class="logo__icon" aria-hidden="true">
-          <use xlink:href="img/sprite.svg#logo"></use>
-        </svg> -->
         <svg class="logo__text" width="101" height="18" aria-hidden="true">
-          <use xlink:href="img/sprite.svg#name"></use>
+          <use xlink:href="img/sprite.svg#logo-text"></use>
         </svg>
       </a>
 
@@ -61,8 +58,8 @@
 
 
         <ul class="catalog__list">
-          <li class="catalog__item">
-            <a class="catalog__link catalog__link--img" href="chicken.html">
+          <li class="catalog__item catalog__chicken-500">
+            <a class="catalog__link catalog__link--img catalog__link--small" href="chicken.html">
               <picture>
                 <source media="(min-width: 1440px)"
                         srcset="img/catalog/desktop/chicken-500.avif 1x,
@@ -125,9 +122,9 @@
             <a class="catalog__btn button" href="form.html">заказать</a>
           </li>
 
-          <li class="catalog__item">
+          <li class="catalog__item catalog__chicken-1000">
 
-            <a class="catalog__link catalog__link--img" href="chicken.html">
+            <a class="catalog__link catalog__link--img catalog__link--big" href="chicken.html">
               <picture>
                 <source media="(min-width: 1440px)"
                         srcset="img/catalog/desktop/chicken-1000.avif 1x,
@@ -163,7 +160,7 @@
                         type="image/webp">
 
                 <img
-                  class="catalog__img"
+                  class="catalog__img catalog__img--big"
                   src="img/catalog/mobile/chicken-1000.png"
                   srcset="img/catalog/mobile/chicken-1000@2x.png"
                   width="84"
@@ -190,9 +187,9 @@
             <a class="catalog__btn button" href="form.html">заказать</a>
           </li>
 
-          <li class="catalog__item">
+          <li class="catalog__item catalog__fish-500">
 
-            <a class="catalog__link catalog__link--img" href="fish.html">
+            <a class="catalog__link catalog__link--img catalog__link--small" href="fish.html">
               <picture>
                 <source media="(min-width: 1440px)"
                         srcset="img/catalog/desktop/fish-500.avif 1x,
@@ -255,9 +252,9 @@
             <a class="catalog__btn button" href="form.html">заказать</a>
           </li>
 
-          <li class="catalog__item">
+          <li class="catalog__item catalog__fish-1000">
 
-            <a class="catalog__link catalog__link--img" href="fish.html">
+            <a class="catalog__link catalog__link--img catalog__link--big" href="fish.html">
               <picture>
                 <source media="(min-width: 1440px)"
                         srcset="img/catalog/desktop/fish-1000.avif 1x,
@@ -293,7 +290,7 @@
                         type="image/webp">
 
                 <img
-                  class="catalog__img"
+                  class="catalog__img catalog__img--big"
                   src="img/catalog/mobile/fish-1000.png"
                   srcset="img/catalog/mobile/fish-1000@2x.png"
                   width="84"
@@ -320,9 +317,9 @@
             <a class="catalog__btn button" href="form.html">заказать</a>
           </li>
 
-          <li class="catalog__item">
+          <li class="catalog__item catalog__buckwheat-500">
 
-            <a class="catalog__link catalog__link--img" href="buckwheat.html">
+            <a class="catalog__link catalog__link--img catalog__link--small" href="buckwheat.html">
               <picture>
                 <source media="(min-width: 1440px)"
                         srcset="img/catalog/desktop/buckwheat-500.avif 1x,
@@ -368,7 +365,7 @@
             </a>
 
             <a class="catalog__link catalog__link--subtitle" href="buckwheat.html">
-              <h3 class="catalog__subtitle">Cat&nbsp;Energy PRO 500&nbsp;г</h3>
+              <h3 class="catalog__subtitle">Cat&nbsp;Energy Slim 500&nbsp;г</h3>
             </a>
 
             <dl class="catalog__feature">
@@ -385,9 +382,9 @@
             <a class="catalog__btn button" href="form.html">заказать</a>
           </li>
 
-          <li class="catalog__item">
+          <li class="catalog__item catalog__buckwheat-1000">
 
-            <a class="catalog__link catalog__link--img" href="buckwheat.html">
+            <a class="catalog__link catalog__link--img catalog__link--big" href="buckwheat.html">
               <picture>
                 <source media="(min-width: 1440px)"
                         srcset="img/catalog/desktop/buckwheat-1000.avif 1x,
@@ -423,7 +420,7 @@
                         type="image/webp">
 
                 <img
-                  class="catalog__img"
+                  class="catalog__img catalog__img--big"
                   src="img/catalog/mobile/buckwheat-1000.png"
                   srcset="img/catalog/mobile/buckwheat-1000@2x.png"
                   width="84"
@@ -433,7 +430,7 @@
             </a>
 
             <a class="catalog__link catalog__link--subtitle" href="buckwheat.html">
-              <h3 class="catalog__subtitle">Cat&nbsp;Energy PRO 1000&nbsp;г</h3>
+              <h3 class="catalog__subtitle">Cat&nbsp;Energy Slim 1000&nbsp;г</h3>
             </a>
 
             <dl class="catalog__feature">
@@ -450,9 +447,9 @@
             <a class="catalog__btn button" href="form.html">заказать</a>
           </li>
 
-          <li class="catalog__item">
+          <li class="catalog__item catalog__rice-500">
 
-            <a class="catalog__link catalog__link--img" href="rice.html">
+            <a class="catalog__link catalog__link--img catalog__link--small" href="rice.html">
               <picture>
                 <source media="(min-width: 1440px)"
                         srcset="img/catalog/desktop/rice-500.avif 1x,
@@ -498,7 +495,7 @@
             </a>
 
             <a class="catalog__link catalog__link--subtitle" href="rice.html">
-              <h3 class="catalog__subtitle">Cat&nbsp;Energy PRO 500&nbsp;г</h3>
+              <h3 class="catalog__subtitle">Cat&nbsp;Energy Slim 500&nbsp;г</h3>
             </a>
 
             <dl class="catalog__feature">
@@ -531,7 +528,7 @@
     </section>
 
     <section class="more">
-      <div class="container more--grid">
+      <div class="more--grid">
         <h2 class="more__title">Дополнительные товары</h2>
 
         <ul class="more__list">
@@ -541,7 +538,7 @@
             <p class="more__amount">1 упаковка (100 г)
               <span class="more__price">200 Р.</span>
             </p>
-            <a class="button" href="form.html">заказать</a>
+            <a class="more__btn button" href="form.html">заказать</a>
           </li>
 
           <li class="more__item">
@@ -550,7 +547,7 @@
             <p class="more__amount">5 литров
               <span class="more__price">50 Р.</span>
             </p>
-            <a class="button" href="form.html">заказать</a>
+            <a class="more__btn button" href="form.html">заказать</a>
           </li>
 
           <li class="more__item">
@@ -560,7 +557,7 @@
               <span class="more__price">100 Р.</span>
             </p>
 
-            <a class="button" href="form.html">заказать</a>
+            <a class="more__btn button" href="form.html">заказать</a>
           </li>
 
           <li class="more__item">
@@ -570,7 +567,7 @@
               <span class="more__price">300 Р.</span>
             </p>
 
-            <a class="button" href="form.html">заказать</a>
+            <a class="more__btn button" href="form.html">заказать</a>
           </li>
         </ul>
 
@@ -579,15 +576,15 @@
               и&nbsp;получите&nbsp;чехол&nbsp;для
               кота&nbsp;в&nbsp;подарок!</p>
         </div>
-      </div> <!-- /container -->
+      </div> <!-- /more--gift -->
 
     </section>
 
     <section class="contact">
       <div class="container">
 
-        <div class="contact__info">
-          <h2 class="contact__title">приглашаем к сотрудничеству дилеров!</h2>
+        <div class="contact__info contact__info--catalog">
+          <h2 class="contact__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
 
           <address class="contact__address">
             ул.&nbsp;Большая
@@ -598,7 +595,7 @@
       </div> <!-- /container -->
 
       <div class="contact__map">
-        <iframe class="contact__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1569057868496!2d30.32173938014065!3d59.93913683706914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627054705509!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="contact__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1569057868496!2d30.32173938014065!3d59.93913683706914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627054705509!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
 
     </section>
@@ -607,8 +604,8 @@
   <footer class="footer">
     <div class="container footer--grid">
       <a class="footer__logo" href="#">
-        <svg width="128" height="24" aria-hidden="true">
-          <use xlink:href="img/sprite.svg#name"></use>
+        <svg class="footer__logo-text" width="128" height="24" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#logo-text"></use>
         </svg>
       </a>
 
@@ -616,14 +613,14 @@
 
         <li class="footer__item">
           <a class="footer__link" href="https://vk.com/">
-            <svg width="23" height="16" aria-hidden="true">
+            <svg class="footer__vk" width="23" height="16" aria-hidden="true">
               <use xlink:href="img/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
         <li class="footer__item">
           <a class="footer__link" href="https://www.instagram.com/">
-            <svg width="16" height="16" aria-hidden="true">
+            <svg class="footer__instagram" width="16" height="16" aria-hidden="true">
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
           </a>
@@ -640,12 +637,12 @@
 
       <div class="footer__dev">
         <a class="footer__academy-text" href="https://htmlacademy.ru/intensive/adaptive">
-          HTML academy
+          HTML Academy
         </a>
 
         <a href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="footer__academy-logo" width="27" height="34" aria-hidden="true">
-            <use xlink:href="img/sprite.svg#academy"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -653,8 +650,9 @@
 
   </footer>
 
-  <script src="js/burger.js"></script>
-  <script src="js/map.js"></script>
+  <script src="js/script.min.js"> </script>
+  <!-- <script src="js/burger.min.js"></script>
+  <script src="js/map.min.js"></script> -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5TDAMT60T9yPWMCcizWtWfqY5Hrf6Awc&callback=initMap"></script>
 
 </body>
