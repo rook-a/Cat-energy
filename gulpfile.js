@@ -11,11 +11,10 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
 const terser = require("gulp-terser");
-const squoosh = require("gulp-libsquoosh");
 const webp = require("gulp-webp");
 const avif = require("gulp-avif");
 const del = require("del");
-
+const imagemin = require("gulp-imagemin");
 
 // Styles
 
@@ -59,7 +58,11 @@ exports.scripts = scripts;
 
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
-  .pipe(squoosh())
+  .pipe(imagemin([
+    imagemin.mozjpeg({progressive: true}),
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.svgo()
+  ]))
   .pipe(gulp.dest("build/img"));
 }
 

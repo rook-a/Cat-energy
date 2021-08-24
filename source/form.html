@@ -8,6 +8,7 @@
   <link rel="apple-touch-icon" href="source/img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body class="page__body">
@@ -54,7 +55,7 @@
     <section class="pick">
       <h1 class="pick__title title">Подбор программы</h1>
 
-      <p class="pick__text">Заполните анкету, и мы подберем
+      <p class="pick__text">Заполните анкету, и мы подберем <br>
         программу питания для вашего кота</p>
 
       <form class="form" action="#" method="POST">
@@ -176,7 +177,7 @@
               name="sweetener"
               type="checkbox"
               checked>
-              <label class="checkbox__label" for="sweetener">сахарозаменитель</label>
+              <label class="checkbox__label checkbox__label-sweetener" for="sweetener">сахарозаменитель</label>
             </li>
 
             <li class="checkbox__item">
@@ -185,7 +186,7 @@
                 id="water"
                 name="water"
                 type="checkbox">
-              <label class="checkbox__label" for="water">питьевая вода</label>
+              <label class="checkbox__label checkbox__label-water" for="water">питьевая вода</label>
             </li>
 
             <li class="checkbox__item">
@@ -194,7 +195,7 @@
                 id="milk"
                 name="milk"
                 type="checkbox">
-              <label class="checkbox__label" for="milk">молоко</label>
+              <label class="checkbox__label checkbox__label-milk" for="milk">молоко</label>
             </li>
 
             <li class="checkbox__item">
@@ -203,7 +204,7 @@
                 id="vitamins"
                 name="vitamins"
                 type="checkbox">
-              <label class="checkbox__label" for="vitamins">витамины</label>
+              <label class="checkbox__label checkbox__label-vitamins" for="vitamins">витамины</label>
             </li>
           </ul>
 
@@ -220,10 +221,14 @@
       <div class="container">
 
         <div class="contact__info">
-          <h2 class="contact__title">приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="contact__title">
+            приглашаем <br>
+            к&nbsp;сотрудничеству <br>
+            дилеров!
+          </h2>
 
           <address class="contact__address">
-            ул.&nbsp;Большая
+            ул.&nbsp;Большая <br>
             Конюшенная,&nbsp;д.&nbsp;19/8
               <span class="contact__sity">Санкт-Петербург</span>
           </address>

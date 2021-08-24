@@ -106,7 +106,7 @@
 
 .lead__img {
   position: absolute;
-  top: 55%;
+  top: 37%;
   right: 6%;
 
   width: 280px;
@@ -136,7 +136,9 @@
 
   top: auto;
   left: 6%;
-  bottom: -31%;
+  bottom: 14%;
+
+  min-width: 251px;
 
   font-size: 14px;
   line-height: 18px;
@@ -161,6 +163,8 @@
 
     top: 66%;
     left: 13.2%;
+
+    min-width: 192px;
 
     font-size: 20px;
     line-height: 20px;
