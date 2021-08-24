@@ -36,7 +36,7 @@
 
 .details__item {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 
   &:last-child {
     margin-bottom: 0;
@@ -103,7 +103,7 @@
 }
 
 .details__text {
-  padding: 0 0 0 80px;
+  padding: 2px 0 0 80px;
   margin: 0;
 
   color: $special-dark-grey;

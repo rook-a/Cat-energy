@@ -1,4 +1,6 @@
 .lead {
+  position: relative;
+
   height: 457px;
 
   background-image:
@@ -106,11 +108,10 @@
 
 .lead__img {
   position: absolute;
-  top: 37%;
-  right: 6%;
+  top: 167px;
+  right: 20px;
 
   width: 280px;
-  height: 270px;
 
   margin: 0 auto;
 
@@ -135,15 +136,15 @@
   position: absolute;
 
   top: auto;
-  left: 6%;
-  bottom: 14%;
+  bottom: 0;
 
-  min-width: 251px;
+  width: 251px;
 
   font-size: 14px;
   line-height: 18px;
 
   padding: 12px 15px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -156,6 +157,7 @@
     line-height: 20px;
 
     padding: 16px 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

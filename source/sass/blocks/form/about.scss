@@ -54,6 +54,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-left: 20px;
     margin-bottom: 24px;
   }
 
@@ -83,7 +84,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 80%;
+    width: 79%;
   }
 }
 
@@ -95,8 +96,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 72%;
+    width: 71%;
 
+    padding-left: 13px;
     margin-bottom: 0;
   }
 }

@@ -11,7 +11,7 @@
 }
 
 .form__btn {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   text-align: center;
 
   .button {
@@ -24,14 +24,14 @@
     justify-content: flex-start;
     align-items: baseline;
 
-    margin: 0 30px 0 69px;
+    margin: 0 30px 105px 69px;
 
     .button {
       font-size: 20px;
       width: 282px;
 
       padding: 16px 20px;
-      margin: 0 61px 72px 0;
+      margin: 0 61px 0 0;
     }
   }
 
@@ -41,21 +41,21 @@
     .button {
       width: 569px; //46-47%
 
-      margin: 0 81px 82px 0;
+      margin: 0 81px 53px 0;
     }
   }
 }
 
 .form__wrapper {
   @media (min-width: $tablet-width) {
-    margin-bottom: 83px;
+    margin-bottom: 81px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
 
-    margin-bottom: 35px;
+    margin-bottom: 70px;
   }
 }
 
