@@ -102,16 +102,7 @@ exports.createAvif = createAvif;
 // Sprite
 
 const sprite = () => {
-  return gulp.src([
-    "source/img/**/*.svg",
-    "!source/img/catalog/icon/*.svg",
-    "!source/img/gift/*.svg",
-    "!source/img/logo/logo-desktop.svg",
-    "!source/img/logo/logo-tablet.svg",
-    "!source/img/logo/logo-mobile.svg"
-  ], {
-    base: "source"
-  })
+  return gulp.src("source/img/sprite/*.svg")
   .pipe(svgstore({
     inlineSvg: true
   }))
