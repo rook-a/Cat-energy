@@ -4,23 +4,30 @@
   align-items: baseline;
 
   padding: 0;
-  margin: 0 0 25px 0;
+  margin: 0 0 14px 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
 
-    margin-bottom: 69px;
+    margin-bottom: 47px;
   }
 }
 
 .contact-form__title {
+  padding: 0 26px 0 20px;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
+    padding: 0 44px 0 38px;
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
     margin-bottom: 76px;
   }
 }
@@ -39,7 +46,7 @@
     padding: 0 0 0 110px;
 
     &:last-child {
-      margin-left: 50px;
+      margin-left: 80px;
       padding: 0 110px 0 0;
     }
   }
@@ -62,7 +69,7 @@
   @include input-size;
 
   outline: none;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 
   &:hover {
     border-color: $more-border;
@@ -93,45 +100,47 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-right: 35px;
+    padding-left: 19px;
+    margin: 0 31px 23px 0;
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 17px;
     margin-right: 0;
   }
 }
 
 .contact-form__mail {
-  width: 197px;
+  width: 200px;
 
-  margin-left: 11px;
+  margin-left: 8px;
 
   @media (min-width: $tablet-width) {
-    width: 531px;
+    width: 528px;
 
     margin-left: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 468px;
+    width: 460px; //468px
 
     margin: 0 0 0 20px;
   }
 }
 
 .contact-form__phone {
-  width: 183px;
+  width: 184px;
 
-  margin-left: 8px;
+  margin-left: 7px;
 
   @media (min-width: $tablet-width) {
-    width: 514px;
+    width: 510px;
 
     margin-left: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 472px;
+    width: 450px;
 
     margin-left: 15px;
   }
@@ -141,8 +150,8 @@
   position: absolute;
   content: "";
 
-  top: 25%;
-  right: 9%;
+  top: 28%;
+  right: 11%;
 
   width: 20px;
   height: 15px;
@@ -151,12 +160,13 @@
   stroke: $subtitle;
 
   @media (min-width: $tablet-width) {
-    right: 11%;
+    top: 25%;
+    right: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 30%;
-    right: 3%;
+    top: 37%;
+    right: 16px;
   }
 }
 
@@ -164,15 +174,15 @@
   position: absolute;
   content: "";
 
-  top: 20%;
-  right: 9%;
+  top: 24%;
+  right: 10%;
 
   width: 20px;
   height: 21px;
 
   @media (min-width: $tablet-width) {
-    top: 25%;
-    right: 11%;
+    top: 21%;
+    right: 79px;
   }
 
   @media (min-width: $desktop-width) {

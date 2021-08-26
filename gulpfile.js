@@ -11,11 +11,10 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
 const terser = require("gulp-terser");
-const squoosh = require("gulp-libsquoosh");
 const webp = require("gulp-webp");
 const avif = require("gulp-avif");
 const del = require("del");
-
+const imagemin = require("gulp-imagemin");
 
 // Styles
 
@@ -59,7 +58,11 @@ exports.scripts = scripts;
 
 const optimizeImages = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
-  .pipe(squoosh())
+  .pipe(imagemin([
+    imagemin.mozjpeg({progressive: true}),
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.svgo()
+  ]))
   .pipe(gulp.dest("build/img"));
 }
 
@@ -99,16 +102,7 @@ exports.createAvif = createAvif;
 // Sprite
 
 const sprite = () => {
-  return gulp.src([
-    "source/img/**/*.svg",
-    "!source/img/catalog/icon/*.svg",
-    "!source/img/gift/*.svg",
-    "!source/img/logo/logo-desktop.svg",
-    "!source/img/logo/logo-tablet.svg",
-    "!source/img/logo/logo-mobile.svg"
-  ], {
-    base: "source"
-  })
+  return gulp.src("source/img/sprite/*.svg")
   .pipe(svgstore({
     inlineSvg: true
   }))

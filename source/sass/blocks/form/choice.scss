@@ -8,9 +8,11 @@
   border-bottom: 1px solid $product-border;
 
   margin: 0 0 26px 0;
-  padding: 23px 20px 20px 20px;
+  padding: 28px 20px 25px 20px;
 
   @media (min-width: $tablet-width) {
+    width: 82%;
+
     border-left: 1px solid $product-border;
     border-right: 1px solid $product-border;
 
@@ -22,7 +24,7 @@
     width: 45%;
 
     margin: 0 110px 0 80px;
-    padding: 25px 0 25px 0;
+    padding: 29px 00;
   }
 }
 
@@ -90,15 +92,15 @@
       height: 40px;
 
       top: -17%;
-      left: 4%;
+      left: 5%;
     }
 
     &:checked + .choice__label::after {
       width: 18px;
       height: 18px;
 
-      top: 7px;
-      left: 35px;
+      top: 6px;
+      left: 39px;
     }
   }
 }
@@ -122,6 +124,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 18px;
+    margin-bottom: 23px;
   }
 }

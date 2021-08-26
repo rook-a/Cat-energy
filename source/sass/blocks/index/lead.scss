@@ -1,4 +1,6 @@
 .lead {
+  position: relative;
+
   height: 457px;
 
   background-image:
@@ -84,21 +86,27 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 1;
+
     font-size: 20px;
     line-height: 20px;
     text-align: left;
 
     color: $basic-black;
 
-    margin: 0 0 0 12.5%;
+    margin: 0 0 48px 12.5%;
   }
 
   @media (min-width: $desktop-width) {
+    position: static;
+    z-index: 0;
+
     font-size: 20px;
     line-height: 20px;
     text-align: left;
 
-    margin-left: 80px;
+    margin: 0 0 0 80px;
 
     color: $basic-black;
   }
@@ -106,11 +114,10 @@
 
 .lead__img {
   position: absolute;
-  top: 55%;
-  right: 6%;
+  top: 167px;
+  right: 20px;
 
   width: 280px;
-  height: 270px;
 
   margin: 0 auto;
 
@@ -135,25 +142,31 @@
   position: absolute;
 
   top: auto;
-  left: 6%;
-  bottom: -31%;
+  bottom: 0;
+
+  width: 251px;
 
   font-size: 14px;
   line-height: 18px;
 
   padding: 12px 15px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
+    position: relative;
+    // position: absolute;
+    // top: 34%;
+    // left: 15%;
+    // bottom: auto;
 
-    top: 34%;
-    left: 15%;
-    bottom: auto;
+    width: 244px;
 
     font-size: 20px;
     line-height: 20px;
 
-    padding: 16px 0;
+    padding: 17px 0;
+    margin: 48px 0 0 12.5%;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -161,10 +174,15 @@
 
     top: 66%;
     left: 13.2%;
+    bottom: auto;
+
+    width: 192px;
 
     font-size: 20px;
     line-height: 20px;
 
     padding: 17px 26px;
+    margin: 0;
+    z-index: 0;
   }
 }

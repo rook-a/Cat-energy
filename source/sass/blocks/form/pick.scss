@@ -1,5 +1,9 @@
 .pick {
   font-family: "Oswald", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .pick__title {
@@ -11,11 +15,12 @@
   @media (min-width: $tablet-width) {
     border-top: none;
 
+    margin: 42px 0 53px 0;
     padding: 0 30px 0 69px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 56px;
+    margin: 21px 0 56px 0;
     padding: 0 110px;
   }
 }
@@ -24,7 +29,7 @@
   text-transform: uppercase;
   color: $basic-black;
 
-  margin-bottom: 39px;
+  margin-bottom: 41px;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -36,7 +41,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 66px;
+    margin-bottom: 68px;
     padding: 0 110px;
   }
 }
