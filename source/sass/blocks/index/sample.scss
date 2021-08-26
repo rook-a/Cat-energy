@@ -501,7 +501,6 @@
 }
 
 .slider__dragger {
-
   @media (min-width: $tablet-width) {
     position: absolute;
     width: 8px;
@@ -533,6 +532,7 @@
 
 .slider__input-range {
   opacity: 0;
+
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 0;
