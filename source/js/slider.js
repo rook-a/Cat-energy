@@ -14,10 +14,11 @@ btnPrev.addEventListener('click', function() {
   btnNext.classList.remove('sample__btn--next');
   btnPrev.classList.add('sample__btn--prev');
 
-  dragger.style.left = 0 + '%';
+  rangeInput.value = 100;
+  dragger.style.left = '0';
 
-  imgBefore.style.width = 100 + '%';
-  imgAfter.style.width = 0 + '%';
+  imgBefore.style.width = '100%';
+  imgAfter.style.width = '0';
 });
 
 btnNext.addEventListener('click', function() {
@@ -29,10 +30,11 @@ btnNext.addEventListener('click', function() {
   btnPrev.classList.remove('sample__btn--prev');
   btnNext.classList.add('sample__btn--next');
 
-  dragger.style.left = 100 + '%';
+  rangeInput.value = 0;
+  dragger.style.left = '100%';
 
-  imgBefore.style.width = 0 + '%';
-  imgAfter.style.width = 100 + '%';
+  imgBefore.style.width = '0';
+  imgAfter.style.width = '100%';
 });
 
 function size() {

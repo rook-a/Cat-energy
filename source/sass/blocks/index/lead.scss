@@ -5,9 +5,11 @@
 
   background-image:
     url("../../../img/cat-bg/cat-bg-mobile.jpg"),
-    linear-gradient(to top, $basic-white 0%, $basic-white 50%, transparent 50%);
+    linear-gradient(to top, $basic-white 0%, $basic-white 37.5%, transparent 37.5%),
+    linear-gradient(to right, $bg-dark-green 0%, $bg-dark-green 100%);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
+  background-position: top;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -121,9 +123,14 @@
 
   margin: 0 auto;
 
+  @media (max-width: $mobile-width) {
+    left: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     top: 30%;
     right: 4%;
+    left: 4%;
 
     width: 709px;
     height: 609px;
@@ -132,6 +139,7 @@
   @media (min-width: $desktop-width) {
     top: 20%;
     right: 23%;
+    left: auto;
 
     width: 552px;
     height: 499px;
@@ -152,12 +160,13 @@
   padding: 12px 15px;
   margin: 0 auto;
 
+  @media (max-width: $mobile-width) {
+    left: 20px;
+    right: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     position: relative;
-    // position: absolute;
-    // top: 34%;
-    // left: 15%;
-    // bottom: auto;
 
     width: 244px;
 
@@ -173,7 +182,7 @@
     position: absolute;
 
     top: 66%;
-    left: 13.2%;
+    left: 190px; //13.2%
     bottom: auto;
 
     width: 192px;
