@@ -3,29 +3,29 @@
 
   background-color: $basic-grey;
 
-  &--grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 55px 0 61px 0;
-
-    &--grid {
-      flex-direction: row;
-      justify-content: space-between;
-    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 57px 0;
+  }
+}
 
-    &--grid {
-      flex-direction: row;
-      justify-content: space-between;
-    }
+.footer__grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 

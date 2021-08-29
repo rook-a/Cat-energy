@@ -241,12 +241,15 @@
       content: "";
 
       top: 39px;
-      left: 125px;
-
-      background-color: $more-icon;
+      left: 0;
+      right: 0;
 
       width: 30px;
       height: 2px;
+
+      background-color: $more-icon;
+
+      margin: 0 auto;
     }
 
     &::after {
@@ -266,12 +269,15 @@
       content: "";
 
       top: 82px;
-      left: 131px;
+      left: 0;
+      right: 0;
 
       width: 60px;
       height: 2px;
 
       background-color: $more-icon;
+
+      margin: 0 auto;
     }
 
     &::after {
@@ -290,8 +296,7 @@
       position: absolute;
       content: "";
 
-      top: 84px;
-      left: 91px;
+      top: 78px;
 
       width: 60px;
       height: 2px;

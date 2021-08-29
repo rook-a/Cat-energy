@@ -15,8 +15,8 @@ navBtn.addEventListener('click', function() {
 
 //---------------------------------------
 
-const rangeInput = document.querySelector('.slider__input-range');
-const dragger = document.querySelector('.slider__dragger');
+const rangeInput = document.querySelector('.sample__slider-input-range');
+const dragger = document.querySelector('.sample__slider-dragger');
 const imgBefore = document.querySelector('.sample__img--before');
 const imgAfter  = document.querySelector('.sample__img--after');
 const btnPrev   = document.getElementById('btnPrev');

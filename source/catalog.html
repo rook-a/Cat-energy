@@ -27,6 +27,23 @@
         </svg>
       </a>
 
+<!--
+  класс при отключенном js:
+  nav--nojs
+
+  классы меню:
+  nav--close — меню закрыто
+  nav--active — меню открыто
+
+  классы кнопки:
+  при nav--close -> nav__button-middle = display: block;
+  при nav--active -> nav__button-middle = display: none;
+
+  крестик:
+  nav--active nav__button::before,
+  nav--active nav__button::after
+ -->
+
       <nav class="nav nav--close nav--nojs">
         <button class="nav__button" type="button" aria-label="Открыть меню">
           <span class="nav__button-middle"></span>
@@ -520,7 +537,7 @@
 
             <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
 
-            <a class="catalog__btn--more button" href="catalog-full.html">показать все</a>
+            <a class="catalog__btn catalog__btn--more button" href="catalog-full.html">показать все</a>
           </li>
         </ul>
 
@@ -529,7 +546,7 @@
     </section>
 
     <section class="more">
-      <div class="more--grid">
+      <div class="more__grid">
         <h2 class="more__title">Дополнительные товары</h2>
 
         <ul class="more__list">
@@ -608,7 +625,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer--grid">
+    <div class="container footer__grid">
       <a class="footer__logo" href="index.html" aria-label="Ссылка на главную страницу Кэт энерджи">
         <svg class="footer__logo-text" width="128" height="24" aria-hidden="true">
           <use xlink:href="img/sprite.svg#logo-text"></use>

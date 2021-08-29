@@ -10,14 +10,16 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 86px;
+  }
+}
 
-    &--grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: min-content 1fr;
-      align-items: center;
-      column-gap: 79px;
-    }
+.more__grid {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: min-content 1fr;
+    align-items: center;
+    column-gap: 79px;
   }
 }
 

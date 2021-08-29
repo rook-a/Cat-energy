@@ -64,39 +64,41 @@
 }
 
 .about__monicker {
-  width: 74%;
+  width: 209px; //74%
 
   @media (min-width: $tablet-width) {
-    width: 82%;
+    width: 547px; //82%
   }
 
   @media (min-width: $desktop-width) {
-    width: 85%;
+    width: 483px; //85%
     padding-left: 18px;
   }
 }
 
 .about__weight {
-  width: 65%;
+  width: 183px; //65%
 
   @media (min-width: $tablet-width) {
-    width: 77%;
+    width: 515px; //77%
   }
 
   @media (min-width: $desktop-width) {
-    width: 79%;
+    width: 450px; //79%
   }
 }
 
 .about__age {
-  width: 53%;
+  width: 150px; //53%
+  padding-left: 12px;
 
   @media (min-width: $tablet-width) {
-    width: 71%;
+    width: 474px; //71%
+    padding-left: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 71%;
+    width: 414px; //71%
 
     padding-left: 13px;
     margin-bottom: 0;

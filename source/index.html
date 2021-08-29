@@ -28,6 +28,23 @@
           </svg>
         </a>
 
+<!--
+  класс при отключенном js:
+  nav--nojs
+
+  классы меню:
+  nav--close — меню закрыто
+  nav--active — меню открыто
+
+  классы кнопки:
+  при nav--close -> nav__button-middle = display: block;
+  при nav--active -> nav__button-middle = display: none;
+
+  крестик:
+  nav--active nav__button::before,
+  nav--active nav__button::after
+ -->
+
         <nav class="nav nav--close nav--nojs">
           <button class="nav__button" type="button" aria-label="Открыть меню">
             <span class="nav__button-middle"></span>
@@ -192,8 +209,8 @@
 
         <div class="sample__slider">
 
-          <div class="sample__img">
-            <div class="sample__img--before sample__img--active">
+          <div class="sample__images">
+            <div class="sample__img sample__img--before sample__img--active">
               <picture>
                 <source srcset="img/model/before.avif 1x,
                                 img/model/before@2x.avif 2x"
@@ -212,7 +229,7 @@
               </picture>
             </div>
 
-            <div class="sample__img--after">
+            <div class="sample__img sample__img--after">
               <picture>
                 <source srcset="img/model/after.avif 1x,
                                 img/model/after@2x.avif 2x"
@@ -236,9 +253,9 @@
           <div class="sample__buttons">
             <button class="sample__btn sample__btn--prev" type="button" id="btnPrev">было</button>
 
-            <div class="slider__range">
-              <div class="slider__dragger" draggable="false" tabindex="0"></div>
-              <input class="slider__input-range" type="range" value="50" min="0" max="100" step="1">
+            <div class="sample__slider-range">
+              <div class="sample__slider-dragger" tabindex="0"></div>
+              <input class="sample__slider-input-range" type="range" value="50" min="0" max="100" step="1">
             </div>
 
             <button class="sample__btn" type="button" id="btnNext">стало</button>
@@ -274,7 +291,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container footer--grid">
+      <div class="container footer__grid">
         <a class="footer__logo" href="index.html" aria-label="Ссылка на главную страницу Кэт энерджи">
           <svg class="footer__logo-text" width="128" height="24" aria-hidden="true">
             <use xlink:href="img/sprite.svg#logo-text"></use>

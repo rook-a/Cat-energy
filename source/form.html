@@ -26,6 +26,23 @@
         </svg>
       </a>
 
+<!--
+  класс при отключенном js:
+  nav--nojs
+
+  классы меню:
+  nav--close — меню закрыто
+  nav--active — меню открыто
+
+  классы кнопки:
+  при nav--close -> nav__button-middle = display: block;
+  при nav--active -> nav__button-middle = display: none;
+
+  крестик:
+  nav--active nav__button::before,
+  nav--active nav__button::after
+ -->
+
       <nav class="nav nav--close nav--nojs">
         <button class="nav__button" type="button" aria-label="Открыть меню">
           <span class="nav__button-middle"></span>
@@ -154,7 +171,7 @@
         </fieldset>
 
         <fieldset class="message border">
-            <legend class="meaasge__title caption">Комментарий</legend>
+            <legend class="message__title caption">Комментарий</legend>
 
             <label for="message"></label>
             <textarea
@@ -243,7 +260,7 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer--grid">
+    <div class="container footer__grid">
       <a class="footer__logo" href="index.html" aria-label="Ссылка на главную страницу Кэт энерджи">
         <svg class="footer__logo-text" width="128" height="24" aria-hidden="true">
           <use xlink:href="img/sprite.svg#logo-text"></use>
