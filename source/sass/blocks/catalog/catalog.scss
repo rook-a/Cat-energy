@@ -474,13 +474,13 @@
 
   width: 260px;
 
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     grid-row: 4 / -1;
 
     width: 228px;
-
-    margin: 0 0 0 14px;
   }
 
   @media (min-width: $desktop-width) {
@@ -488,7 +488,6 @@
 
     width: 168px;
 
-    margin: 0 auto;
     padding: 10px 0;
   }
 

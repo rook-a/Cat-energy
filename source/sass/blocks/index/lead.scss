@@ -8,7 +8,6 @@
     linear-gradient(to top, $basic-white 0%, $basic-white 37.5%, transparent 37.5%),
     linear-gradient(to right, $bg-dark-green 0%, $bg-dark-green 100%);
   background-repeat: no-repeat;
-  background-size: auto;
   background-position: top;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -20,7 +19,10 @@
   margin: 0 0 22px 0;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../../img/cat-bg/cat-bg-mobile@2x.jpg");
+    background-image:
+      url("../../../img/cat-bg/cat-bg-mobile@2x.jpg"),
+      linear-gradient(to right, $bg-dark-green 0%, $bg-dark-green 100%);
+    background-size: auto 62.7%;
   }
 
   @media (min-width: $tablet-width) {
